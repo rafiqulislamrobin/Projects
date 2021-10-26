@@ -1,0 +1,301 @@
+2021-10-04 00:02:27.978 +06:00 [INF] Application Starting up
+2021-10-04 00:02:36.351 +06:00 [INF] User logged in.
+2021-10-04 00:37:39.075 +06:00 [INF] Application Starting up
+2021-10-04 00:37:52.209 +06:00 [INF] User logged in.
+2021-10-04 00:38:26.116 +06:00 [INF] User logged out.
+2021-10-04 00:38:39.387 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-10-04 00:38:56.379 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at DataImporter.Services.EmailSender.SendEmailAsync(String email, String subject, String htmlMessage) in D:\#FinalProject\3\DataImporter\Services\EmailService.cs:line 29
+   at DataImporter.Controllers.AccountController.Register(RegisterModel model) in D:\#FinalProject\3\DataImporter\Controllers\AccountController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-04 00:44:41.185 +06:00 [INF] Application Starting up
+2021-10-04 00:45:10.381 +06:00 [INF] User logged in.
+2021-10-04 00:52:54.224 +06:00 [INF] Application Starting up
+2021-10-04 01:07:05.811 +06:00 [INF] Application Starting up
+2021-10-04 01:07:07.642 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: Unable to resolve the type 'DataImporter.Services.EmailService' because the lifetime scope it belongs in can't be located. The following services are exposed by this registration:
+- DataImporter.Services.IEmailService
+
+Details
+ ---> Autofac.Core.DependencyResolutionException: No scope with a tag matching 'AutofacWebRequest' is visible from the scope in which the instance was requested.
+
+If you see this during execution of a web application, it generally indicates that a component registered as per-HTTP request is being requested by a SingleInstance() component (or a similar scenario). Under the web integration always request dependencies from the dependency resolver or the request lifetime scope, never from the container itself.
+   at Autofac.Core.Lifetime.MatchingScopeLifetime.FindScope(ISharingLifetimeScope mostNestedVisibleScope)
+   at Autofac.Core.Resolving.Middleware.ScopeSelectionMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ScopeSelectionMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method537(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-04 01:07:25.112 +06:00 [INF] Application Starting up
+2021-10-04 01:16:42.199 +06:00 [INF] Application Starting up
+2021-10-04 01:40:52.513 +06:00 [INF] Application Starting up
+2021-10-04 01:41:00.850 +06:00 [INF] User logged in.
+2021-10-04 01:41:19.432 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:42:33.379 +06:00 [INF] Application Starting up
+2021-10-04 01:42:43.838 +06:00 [INF] User logged in.
+2021-10-04 01:43:30.963 +06:00 [INF] Application Starting up
+2021-10-04 01:43:37.534 +06:00 [INF] User logged in.
+2021-10-04 01:43:53.600 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:47:20.733 +06:00 [INF] Application Starting up
+2021-10-04 01:47:28.103 +06:00 [INF] User logged in.
+2021-10-04 01:49:49.347 +06:00 [INF] Application Starting up
+2021-10-04 01:49:56.666 +06:00 [INF] User logged in.
+2021-10-04 01:50:08.574 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:52:01.758 +06:00 [INF] Application Starting up
+2021-10-04 01:52:13.875 +06:00 [WRN] Invalid password for user.
+2021-10-04 01:52:13.878 +06:00 [WRN] User failed to provide the correct password.
+2021-10-04 01:52:22.367 +06:00 [INF] User logged in.
+2021-10-04 01:53:05.511 +06:00 [INF] Application Starting up
+2021-10-04 01:53:13.115 +06:00 [INF] User logged in.
+2021-10-04 01:56:05.018 +06:00 [INF] Application Starting up
+2021-10-04 01:56:14.666 +06:00 [INF] User logged in.
+2021-10-04 01:56:54.096 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:57:03.111 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:57:08.559 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:57:14.230 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 01:58:42.103 +06:00 [INF] Application Starting up
+2021-10-04 01:58:51.088 +06:00 [INF] User logged in.
+2021-10-04 01:59:29.379 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 01:59:34.878 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 01:59:41.457 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 02:01:38.183 +06:00 [INF] Application Starting up
+2021-10-04 02:01:45.709 +06:00 [INF] User logged in.
+2021-10-04 02:02:10.304 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 02:02:25.079 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 02:03:01.753 +06:00 [ERR] Upload Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.UpdateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 88
+   at DataImporter.Areas.User.Models.EditGroupModel.Update() in D:\#FinalProject\3\DataImporter\Areas\User\Models\EditGroupModel.cs:line 63
+   at DataImporter.Areas.User.Controllers.DataImporterController.EditGroup(EditGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 100
+2021-10-04 02:03:37.055 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 02:10:24.050 +06:00 [INF] Application Starting up
+2021-10-04 02:10:31.772 +06:00 [INF] User logged in.
+2021-10-04 02:13:06.307 +06:00 [INF] Application Starting up
+2021-10-04 02:13:13.852 +06:00 [INF] User logged in.
+2021-10-04 02:18:42.345 +06:00 [INF] Application Starting up
+2021-10-04 02:18:50.647 +06:00 [INF] User logged in.
+2021-10-04 02:21:35.762 +06:00 [INF] Application Starting up
+2021-10-04 02:22:06.520 +06:00 [INF] User logged in.
+2021-10-04 02:22:23.796 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 02:25:18.832 +06:00 [INF] Application Starting up
+2021-10-04 02:25:48.964 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 02:29:40.958 +06:00 [INF] Application Starting up
+2021-10-04 02:48:26.928 +06:00 [INF] Application Starting up
+2021-10-04 02:48:35.441 +06:00 [INF] User logged in.
+2021-10-04 02:56:51.896 +06:00 [INF] Application Starting up
+2021-10-04 02:57:01.734 +06:00 [INF] User logged in.
+2021-10-04 02:58:15.099 +06:00 [INF] Application Starting up
+2021-10-04 02:58:27.489 +06:00 [INF] User logged in.
+2021-10-04 09:56:56.129 +06:00 [INF] Application Starting up
+2021-10-04 09:57:33.157 +06:00 [INF] User logged in.
+2021-10-04 10:02:14.885 +06:00 [INF] Application Starting up
+2021-10-04 10:03:35.002 +06:00 [INF] User logged in.
+2021-10-04 11:44:40.426 +06:00 [INF] Application Starting up
+2021-10-04 11:45:21.777 +06:00 [WRN] User cannot sign in without a confirmed account.
+2021-10-04 11:45:35.336 +06:00 [INF] User logged in.
+2021-10-04 12:11:41.301 +06:00 [INF] Application Starting up
+2021-10-04 12:12:23.087 +06:00 [INF] User logged in.
+2021-10-04 12:30:34.846 +06:00 [INF] Application Starting up
+2021-10-04 12:30:45.607 +06:00 [INF] User logged in.
+2021-10-04 22:03:41.635 +06:00 [INF] Application Starting up
+2021-10-04 22:03:50.860 +06:00 [INF] User logged in.
+2021-10-04 22:04:11.586 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:22.369 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:28.395 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:34.328 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:40.250 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:46.016 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:04:51.632 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:03.737 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:08.186 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:13.778 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:20.627 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:31.388 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:05:37.599 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:08:16.495 +06:00 [INF] Application Starting up
+2021-10-04 22:08:24.953 +06:00 [INF] User logged in.
+2021-10-04 22:08:33.258 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:08:38.898 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:08:42.351 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68
+2021-10-04 22:11:27.700 +06:00 [INF] Application Starting up
+2021-10-04 22:11:51.045 +06:00 [INF] User logged in.
+2021-10-04 22:11:56.545 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.GroupServices.CreateGroup(Group group, Guid id) in D:\#FinalProject\2\DataImporter.Info\Services\GroupServices.cs:line 28
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\2\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 56
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\2\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 68

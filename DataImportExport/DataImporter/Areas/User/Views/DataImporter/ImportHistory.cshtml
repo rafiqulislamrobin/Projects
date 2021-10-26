@@ -1,0 +1,115 @@
+﻿@model ImportHistoryModel
+@{
+    ViewData["Title"] = "ImportHistory";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/user/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/user/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function () {
+
+            $('#History').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/DataImporter/GetImportHistoryData",
+
+            });
+        });
+
+    </script>
+}
+
+
+<!-- Content Header (Page header) -->
+<div>
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 style="color:black">Imported File History</h1>
+                </div>
+
+            </div>
+        </div><!-- /.container-fluid -->
+        <form method="get" asp-controller="DataImporter" asp-action="Importdate" asp-antiforgery="true">
+
+
+            <div class="card w-75" style="background-image: -webkit-linear-gradient(-135deg, #abbaab,#ffffff); margin-bottom: 0">
+                <div class="card-body">
+                    <div style="display: flex;justify-content:center;">
+                        <div class="mt-4" style="display: flex; ">
+
+                            <div class="form-group" style="color:black">
+                                <label asp-for="DateFrom" style="margin-left:-20px">Date From </label>
+                                <input asp-for="DateFrom" class="form-control" id="datefrom"
+                                       type="date" style="margin-left:-20px" />
+                            </div>
+                            <div class="form-group" style="color:black">
+                                <label asp-for="DateTo" style="margin-left:-10px">Date To</label>
+                                <input asp-for="DateTo" class="form-control" id="dateTo"
+                                       type="date" style="margin-left:-10px" />
+                            </div>
+
+
+                            <div>
+
+                                <button type="submit" asp-action="ImportHistory" class="btn btn-primary "
+                                        style="color: black;background-color:white;
+                             border-radius:15px; border-color:#9c94d6; margin-top:30px; ">
+                                    search
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header" style="color: black;background-color: #9c94d6">
+                            <h3 class="card-title">History</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="History" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>File Name</th>
+                                        <th>Upload Date</th>
+                                        <th>Group Name</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                            </table>
+
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                    <!-- /.card -->
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div> 
+   

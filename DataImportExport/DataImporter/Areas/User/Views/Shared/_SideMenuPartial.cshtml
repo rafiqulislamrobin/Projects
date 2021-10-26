@@ -1,0 +1,103 @@
+﻿<nav class="mt-2" >
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="color:white!important">
+        <!-- Add icons to the links using the .nav-icon class
+    with font-awesome or any other icon font library -->
+
+        <li class="nav-item" >
+            <a asp-controller="DataImporter" asp-action="Index" class="nav-link" style="color:black">
+                <i class="fas fa-chart-line icon-items" style="margin: 5px"> </i>
+                <p>
+                    Dashboard
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link" style=" color: black">
+                <i class="fas fa-users icon-items" style="margin: 5px"></i>
+                <p>
+                    Group
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="CreateGroups" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Create Groups</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="ViewGroups" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>View Groups</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="DataImporter" asp-action="ViewContacts" class="nav-link" style=" color: black">
+                <i class="fas fa-address-book icon-items" style="margin: 5px"></i>
+                <p>
+                    View Contacts
+                </p>
+            </a>
+        </li>
+
+     
+        <li class="nav-item">
+            <a href="#" class="nav-link" style=" color: black">
+                <i class="fas fa-upload icon-items" style="margin: 5px"></i>
+                <p>
+                    Imports
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item" >
+                    <a asp-controller="DataImporter" asp-action="ImportFile" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Upload File</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="ImportHistory" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Imports History</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link" style=" color: black">
+                <i class="fas fa-file-export icon-items" style="margin: 5px"></i>
+                <p>
+                    Export
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="ExportFile" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Export File</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="ExportFileMultiple" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Export File (Multiple)</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="DataImporter" asp-action="ExportFileHistory" class="nav-link" style=" color: black">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Exports History</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>

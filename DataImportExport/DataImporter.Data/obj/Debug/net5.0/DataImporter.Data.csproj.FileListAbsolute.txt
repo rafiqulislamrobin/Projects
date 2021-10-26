@@ -1,0 +1,48 @@
+D:\#FinalProject\DataImporter\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.deps.json
+D:\#FinalProject\DataImporter\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\DataImporter\DataImporter.Data\bin\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\DataImporter\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csprojAssemblyReference.cache
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfoInputs.cache
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfo.cs
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csproj.CoreCompileInputs.cache
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\DataImporter\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.deps.json
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\bin\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csprojAssemblyReference.cache
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfoInputs.cache
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfo.cs
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csproj.CoreCompileInputs.cache
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\DataImporter - Copy\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\3\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.deps.json
+D:\#FinalProject\3\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\3\DataImporter.Data\bin\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\3\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csprojAssemblyReference.cache
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfoInputs.cache
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfo.cs
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csproj.CoreCompileInputs.cache
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\3\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\2\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.deps.json
+D:\#FinalProject\2\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\2\DataImporter.Data\bin\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\2\DataImporter.Data\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csprojAssemblyReference.cache
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfoInputs.cache
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.AssemblyInfo.cs
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.csproj.CoreCompileInputs.cache
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.dll
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\ref\DataImporter.Data.dll
+D:\#FinalProject\2\DataImporter.Data\obj\Debug\net5.0\DataImporter.Data.pdb

@@ -1,0 +1,98 @@
+﻿@model ConfirmFile
+@{
+    ViewData["Title"] = "ConfirmContacts";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/user/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/user/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+}
+
+
+<div style="margin-top:50px; margin-bottom:25px">
+    <h2 style="text-align:center; color:black"> Confirm your File</h2>
+</div>
+<div>
+    <form method="post" enctype="multipart/form-data" asp-controller="DataImporter" asp-action="ConfirmContacts">
+        <input type="hidden" asp-for="file" />
+        <input type="hidden" asp-for="GroupId" />
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="color: black;background-color: #9c94d6">
+                                <h3 class="card-title">List</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            @{
+                                                foreach (var item in Model.headers)
+                                                {
+                                                    <th>@item</th>
+                                                }
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var item in Model.cont)
+                                        {
+                                            <tr>
+
+                                                @foreach (var v in item.Value)
+                                                {
+                                                    <td>@v.Value</td>
+                                                }
+
+
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+
+
+
+        <div class="col text-center">
+
+            <button type="submit" class="btn btn-success" style="color: black;background-color: #9c94d6;
+               border-color:#9c94d6;margin-left:-20px">
+                Upload
+            </button>
+            <input type="hidden" asp-for="GroupId" value="@Model.GroupId " id="groupid" />
+
+
+            <button asp-action="CancelImportFile" asp-controller="DataImporter" type="submit" class="btn btn-success"
+                    style="color: black;background-color: #9c94d6;border-color:#9c94d6; margin-left:20px">
+                Cancel
+            </button>
+
+
+        </div>
+
+
+
+    </form>
+
+</div>

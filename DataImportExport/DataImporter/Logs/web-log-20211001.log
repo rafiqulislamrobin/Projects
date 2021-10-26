@@ -1,0 +1,142 @@
+2021-10-01 00:00:21.431 +06:00 [INF] Application Starting up
+2021-10-01 00:00:33.698 +06:00 [INF] User logged in.
+2021-10-01 00:00:56.667 +06:00 [INF] User logged out.
+2021-10-01 00:02:12.122 +06:00 [INF] User logged in.
+2021-10-01 00:02:59.240 +06:00 [INF] User logged out.
+2021-10-01 00:03:03.401 +06:00 [INF] User logged in.
+2021-10-01 00:07:19.709 +06:00 [INF] Application Starting up
+2021-10-01 00:07:31.172 +06:00 [INF] User logged in.
+2021-10-01 00:07:36.255 +06:00 [INF] User logged out.
+2021-10-01 00:07:49.333 +06:00 [INF] User logged in.
+2021-10-01 00:19:59.615 +06:00 [INF] Application Starting up
+2021-10-01 00:20:41.845 +06:00 [INF] User logged in.
+2021-10-01 00:27:03.419 +06:00 [INF] Application Starting up
+2021-10-01 00:27:16.811 +06:00 [INF] User logged in.
+2021-10-01 00:28:01.928 +06:00 [INF] Application Starting up
+2021-10-01 00:28:08.742 +06:00 [INF] User logged in.
+2021-10-01 00:29:50.290 +06:00 [INF] Application Starting up
+2021-10-01 00:29:57.925 +06:00 [INF] User logged in.
+2021-10-01 00:33:45.867 +06:00 [INF] Application Starting up
+2021-10-01 00:33:56.982 +06:00 [INF] User logged in.
+2021-10-01 00:43:02.879 +06:00 [INF] Application Starting up
+2021-10-01 00:43:13.713 +06:00 [INF] User logged in.
+2021-10-01 00:45:06.840 +06:00 [INF] Application Starting up
+2021-10-01 00:45:17.001 +06:00 [INF] User logged in.
+2021-10-01 00:45:18.338 +06:00 [INF] User logged out.
+2021-10-01 00:45:22.766 +06:00 [INF] User logged in.
+2021-10-01 00:47:00.719 +06:00 [INF] Application Starting up
+2021-10-01 00:47:12.876 +06:00 [INF] User logged in.
+2021-10-01 00:48:51.300 +06:00 [INF] Application Starting up
+2021-10-01 00:49:01.746 +06:00 [INF] User logged in.
+2021-10-01 00:50:25.717 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The process cannot access the file 'D:\#FinalProject\3\DataImporter\wwwroot\ExcelFiles\NAPE.xlsx' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Areas.User.Models.ConfirmFile.ConfirmFileUpload(String filepath) in D:\#FinalProject\3\DataImporter\Areas\User\Models\ConfirmFile.cs:line 44
+   at DataImporter.Areas.User.Controllers.DataImporterController.ConfirmContacts(FilePathModel filemodels) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 185
+   at lambda_method945(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-01 00:52:55.617 +06:00 [INF] Application Starting up
+2021-10-01 00:53:02.802 +06:00 [INF] User logged in.
+2021-10-01 00:55:21.826 +06:00 [INF] Application Starting up
+2021-10-01 00:55:34.962 +06:00 [INF] User logged in.
+2021-10-01 01:07:13.291 +06:00 [INF] Application Starting up
+2021-10-01 01:07:51.571 +06:00 [INF] User logged in.
+2021-10-01 13:48:08.282 +06:00 [INF] Application Starting up
+2021-10-01 13:48:21.610 +06:00 [INF] User logged in.
+2021-10-01 13:51:13.458 +06:00 [INF] Application Starting up
+2021-10-01 13:51:36.968 +06:00 [INF] User logged in.
+2021-10-01 13:52:04.706 +06:00 [INF] Application Starting up
+2021-10-01 13:52:21.264 +06:00 [INF] User logged in.
+2021-10-01 13:54:33.238 +06:00 [INF] Application Starting up
+2021-10-01 13:54:46.208 +06:00 [INF] User logged in.
+2021-10-01 13:55:24.591 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'context')
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context)
+   at DataImporter.Areas.User.Models.ExportFileModel.Resolve(ILifetimeScope scope) in D:\#FinalProject\3\DataImporter\Areas\User\Models\ExportFileModel.cs:line 39
+   at DataImporter.Areas.User.Controllers.DataImporterController.ViewContacts(ExportFileModel exportFileModel) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 252
+   at lambda_method928(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-01 13:55:56.894 +06:00 [INF] Application Starting up
+2021-10-01 13:56:10.655 +06:00 [INF] User logged in.
+2021-10-01 13:59:08.203 +06:00 [INF] Application Starting up
+2021-10-01 13:59:22.240 +06:00 [INF] User logged in.
+2021-10-01 14:16:06.866 +06:00 [INF] Application Starting up
+2021-10-01 14:16:25.453 +06:00 [INF] User logged in.
+2021-10-01 14:24:00.997 +06:00 [INF] Application Starting up
+2021-10-01 14:24:08.044 +06:00 [INF] User logged in.
+2021-10-01 14:31:05.704 +06:00 [INF] Application Starting up
+2021-10-01 14:31:19.162 +06:00 [INF] User logged in.
+2021-10-01 14:34:14.932 +06:00 [INF] Application Starting up
+2021-10-01 14:34:22.691 +06:00 [INF] User logged in.
+2021-10-01 14:43:46.735 +06:00 [INF] Application Starting up
+2021-10-01 14:43:55.503 +06:00 [INF] User logged in.
+2021-10-01 14:47:05.251 +06:00 [INF] Application Starting up
+2021-10-01 14:47:16.126 +06:00 [INF] User logged in.
+2021-10-01 14:49:07.501 +06:00 [INF] Application Starting up
+2021-10-01 14:49:21.357 +06:00 [INF] User logged in.
+2021-10-01 14:51:36.460 +06:00 [INF] Application Starting up
+2021-10-01 14:51:55.185 +06:00 [INF] User logged in.
+2021-10-01 14:55:37.392 +06:00 [INF] Application Starting up
+2021-10-01 14:55:47.346 +06:00 [INF] User logged in.
+2021-10-01 14:59:00.731 +06:00 [INF] Application Starting up
+2021-10-01 14:59:09.265 +06:00 [INF] User logged in.
+2021-10-01 15:01:05.627 +06:00 [INF] Application Starting up
+2021-10-01 15:01:25.190 +06:00 [INF] User logged in.
+2021-10-01 15:03:58.984 +06:00 [INF] Application Starting up
+2021-10-01 15:04:10.348 +06:00 [INF] User logged in.
+2021-10-01 15:04:42.849 +06:00 [INF] Application Starting up
+2021-10-01 15:06:21.641 +06:00 [INF] User logged in.
+2021-10-01 16:22:07.388 +06:00 [INF] Application Starting up
+2021-10-01 16:22:21.314 +06:00 [INF] User logged in.
+2021-10-01 16:31:34.462 +06:00 [INF] Application Starting up
+2021-10-01 16:31:56.438 +06:00 [INF] User logged in.

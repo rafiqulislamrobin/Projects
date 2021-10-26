@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewData["Title"] = "ViewImportFile";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+
+@section Scripts
+{
+    <script src="/user/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/user/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function () {
+
+            $('#Contact').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/Admin/Gallery/GetContactData",
+
+                "columnDefs": [
+                    {
+                        "orderable": false,
+                        "targets": 4,
+                        "render": function (data, type, row) {
+                            return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href='/admin/gallery/edit/${data}'" value='${data}'>
+                                                    <i class="fas fa-pencil-alt">
+                                                    </i>
+                                                    Edit
+                                                </button>
+                                                <button type="submit" class="btn btn-danger btn-sm show-bs-modal" href="#" data-id='${data}' value='${data}'>
+                                                    <i class="fas fa-trash">
+                                                    </i>
+                                                    Delete
+                                                </button>`;
+                        }
+                    }
+                ]
+
+            });
+            $('#Contact').on('click', '.show-bs-modal', function (event) {
+                var id = $(this).data("id");
+                var modal = $("#modal-default");
+                modal.find('.modal-body p').text('Are you sure you want to delete this record?')
+                $("#deleteId").val(id);
+                $("#deleteForm").attr("action", "/admin/gallery/delete")
+                modal.modal('show');
+            });
+            $("#deleteButton").click(function () {
+                $("#deleteForm").submit();
+            });
+
+        });
+    </script>
+}
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Imported File List</h1>
+            </div>
+
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header" style="color: white;background-color: #343a40">
+                        <h3 class="card-title"> List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="Contact" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                   
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Age</th>
+                                </tr>
+                            </thead>
+
+
+                        </table>
+
+                        <partial name="_deletePartial" />
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- /.card -->
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<!-- /.content-wrapper -->

@@ -1,0 +1,103 @@
+﻿@model IndexModel
+
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css">
+
+}
+<!-- Main content -->
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="dashbord-header DataImporter" style="overflow-x:hidden">
+    <h1 >Data Importer</h1>
+</div>
+
+<div class="row" style=" margin-top: 255px; margin-right: 20px;margin-left: 20px">
+
+    <div class="col-12 col-md-4">
+        <div class="info-box" style=" background-color: #9c94d6">
+            <span class="info-box-icon bg-info elevation-1">
+                <i class="fas fa-users icon-items "></i>
+            </span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Total Groups</span>
+                <span class="info-box-number" asp-validation-for="TotalGroups">
+                    @Html.DisplayFor(x => x.TotalGroups)
+
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-12 col-md-4">
+        <div class="info-box mb-3" style=" background-color: #9c94d6">
+            <span class="info-box-icon bg-danger elevation-1">
+                <i class="fas fa-file-export icon-items"></i>
+            </span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Total Exports</span>
+                <span class="info-box-number">
+                    @Html.DisplayFor(x => x.TotalExports)
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <!-- fix for small devices only -->
+    <div class="clearfix hidden-md-up"></div>
+
+    <div class="col-12 col-md-4">
+        <div class="info-box mb-3" style=" background-color: #9c94d6">
+            <span class="info-box-icon bg-success elevation-1">
+                <i class="fas fa-upload icon-items"></i>
+            </span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Total Imports</span>
+                <span class="info-box-number">
+                    @Html.DisplayFor(x => x.TotalImports)
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <!-- /.col -->
+</div>
+<!-- Info boxes -->
+
+
+
+
+
+
+@section Scripts
+{ 
+    <script type="text/javascript">
+   
+        $("rotate").
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/jquery.simple-text-rotator.js" integrity="sha512-XtaW/XDNJek0yADVvORkgV+aEy1P2OWYH/HugWsFjMocTCzNw4Qjd15r3DCCnkiDbsADYBzFUqaGoIAp5R6Grg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/jquery.simple-text-rotator.min.js" integrity="sha512-j48pAcawXdEqlVghY0dqsQduZileTrD8C7TT/l74Mieg97zlq/aMNrBkdj8HkLqMzpNwkfc+EGIJosF+C68Thw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}

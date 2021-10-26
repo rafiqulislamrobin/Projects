@@ -1,0 +1,531 @@
+2021-09-20 00:33:07.885 +06:00 [INF] Application Starting up
+2021-09-20 00:37:06.634 +06:00 [INF] Application Starting up
+2021-09-20 00:43:22.433 +06:00 [INF] Application Starting up
+2021-09-20 00:47:54.663 +06:00 [INF] Application Starting up
+2021-09-20 00:49:37.096 +06:00 [INF] Application Starting up
+2021-09-20 00:50:41.970 +06:00 [INF] Application Starting up
+2021-09-20 01:04:37.802 +06:00 [INF] Application Starting up
+2021-09-20 01:34:45.478 +06:00 [INF] Application Starting up
+2021-09-20 01:39:24.571 +06:00 [INF] Application Starting up
+2021-09-20 01:54:23.958 +06:00 [INF] Application Starting up
+2021-09-20 01:55:12.895 +06:00 [INF] Application Starting up
+2021-09-20 02:03:11.952 +06:00 [INF] Application Starting up
+2021-09-20 02:05:18.989 +06:00 [INF] Application Starting up
+2021-09-20 02:06:05.912 +06:00 [INF] Application Starting up
+2021-09-20 02:06:47.874 +06:00 [INF] Application Starting up
+2021-09-20 02:14:09.017 +06:00 [INF] Application Starting up
+2021-09-20 02:14:49.050 +06:00 [INF] Application Starting up
+2021-09-20 02:20:44.853 +06:00 [INF] Application Starting up
+2021-09-20 02:30:23.786 +06:00 [INF] Application Starting up
+2021-09-20 02:46:43.962 +06:00 [INF] Application Starting up
+2021-09-20 02:48:44.893 +06:00 [INF] Application Starting up
+2021-09-20 02:50:39.697 +06:00 [INF] Application Starting up
+2021-09-20 02:51:43.800 +06:00 [INF] Application Starting up
+2021-09-20 02:52:57.576 +06:00 [INF] Application Starting up
+2021-09-20 02:53:44.684 +06:00 [INF] Application Starting up
+2021-09-20 02:54:22.477 +06:00 [INF] Application Starting up
+2021-09-20 03:05:07.739 +06:00 [INF] Application Starting up
+2021-09-20 03:08:34.744 +06:00 [INF] Application Starting up
+2021-09-20 11:52:02.902 +06:00 [INF] Application Starting up
+2021-09-20 11:56:34.018 +06:00 [INF] Application Starting up
+2021-09-20 12:22:36.435 +06:00 [INF] Application Starting up
+2021-09-20 12:23:59.909 +06:00 [INF] Application Starting up
+2021-09-20 12:24:38.524 +06:00 [INF] Application Starting up
+2021-09-20 12:25:11.269 +06:00 [INF] Application Starting up
+2021-09-20 12:26:27.206 +06:00 [INF] Application Starting up
+2021-09-20 12:29:49.603 +06:00 [INF] Application Starting up
+2021-09-20 12:30:37.934 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ViewData item that has the key 'GroupId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GetSelectListItems(ViewContext viewContext, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, ICollection`1 currentValues, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.GenerateDropDown(ModelExplorer modelExplorer, String expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DropDownListFor[TResult](Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_4() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 75
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_2() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 66
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.ExecuteAsync() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 12:31:13.500 +06:00 [INF] Application Starting up
+2021-09-20 12:56:33.327 +06:00 [INF] Application Starting up
+2021-09-20 13:06:30.193 +06:00 [INF] Application Starting up
+2021-09-20 13:06:39.049 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ViewData item that has the key 'GroupId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GetSelectListItems(ViewContext viewContext, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, ICollection`1 currentValues, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.GenerateDropDown(ModelExplorer modelExplorer, String expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DropDownListFor[TResult](Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_4() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 75
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_2() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 66
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.ExecuteAsync() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 13:06:49.890 +06:00 [INF] Application Starting up
+2021-09-20 13:07:09.495 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ViewData item that has the key 'GroupId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GetSelectListItems(ViewContext viewContext, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, ICollection`1 currentValues, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.GenerateDropDown(ModelExplorer modelExplorer, String expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DropDownListFor[TResult](Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_4() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 75
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_2() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 66
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.ExecuteAsync() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 13:07:25.671 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ViewData item that has the key 'GroupId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GetSelectListItems(ViewContext viewContext, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, ICollection`1 currentValues, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateSelect(ViewContext viewContext, ModelExplorer modelExplorer, String optionLabel, String expression, IEnumerable`1 selectList, Boolean allowMultiple, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.GenerateDropDown(ModelExplorer modelExplorer, String expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DropDownListFor[TResult](Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_4() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 75
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.<ExecuteAsync>b__24_2() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 66
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Areas_User_Views_DataImporter_ExportFile.ExecuteAsync() in D:\#FinalProject\3\DataImporter\Areas\User\Views\DataImporter\ExportFile.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 13:07:55.887 +06:00 [INF] Application Starting up
+2021-09-20 13:08:25.770 +06:00 [INF] Application Starting up
+2021-09-20 13:09:45.357 +06:00 [INF] Application Starting up
+2021-09-20 13:11:34.202 +06:00 [INF] Application Starting up
+2021-09-20 13:12:39.499 +06:00 [INF] Application Starting up
+2021-09-20 13:25:36.408 +06:00 [INF] Application Starting up
+2021-09-20 13:27:24.095 +06:00 [INF] Application Starting up
+2021-09-20 13:35:07.396 +06:00 [INF] Application Starting up
+2021-09-20 13:37:19.213 +06:00 [INF] Application Starting up
+2021-09-20 15:29:43.584 +06:00 [INF] Application Starting up
+2021-09-20 15:30:55.352 +06:00 [INF] Application Starting up
+2021-09-20 15:34:17.351 +06:00 [INF] Application Starting up
+2021-09-20 15:35:10.232 +06:00 [INF] Application Starting up
+2021-09-20 15:36:15.463 +06:00 [INF] Application Starting up
+2021-09-20 15:58:09.350 +06:00 [INF] Application Starting up
+2021-09-20 16:02:17.448 +06:00 [INF] Application Starting up
+2021-09-20 16:25:59.092 +06:00 [INF] Application Starting up
+2021-09-20 16:48:05.406 +06:00 [INF] Application Starting up
+2021-09-20 17:01:51.678 +06:00 [INF] Application Starting up
+2021-09-20 17:01:59.978 +06:00 [ERR] Connection ID "17870283335901642917", Request ID "800000a6-0003-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+2021-09-20 17:02:00.010 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:02:00.029 +06:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: The response has been aborted due to an unhandled application exception.
+ ---> System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAbortedException()
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.InitializeResponse(Boolean flushHeaders)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.<>c__DisplayClass367_0.<<WriteAsync>g__WriteFirstAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:02:00.031 +06:00 [ERR] Connection ID "17870283335901642917", Request ID "800000a6-0003-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-09-20 17:04:39.905 +06:00 [INF] Application Starting up
+2021-09-20 17:06:01.202 +06:00 [INF] Application Starting up
+2021-09-20 17:07:14.032 +06:00 [INF] Application Starting up
+2021-09-20 17:07:25.021 +06:00 [ERR] Connection ID "17293822575008284844", Request ID "800000ad-0001-f000-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+2021-09-20 17:07:25.052 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:07:25.075 +06:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: The response has been aborted due to an unhandled application exception.
+ ---> System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAbortedException()
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.InitializeResponse(Boolean flushHeaders)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.<>c__DisplayClass367_0.<<WriteAsync>g__WriteFirstAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:07:25.077 +06:00 [ERR] Connection ID "17293822575008284844", Request ID "800000ad-0001-f000-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-09-20 17:09:47.695 +06:00 [INF] Application Starting up
+2021-09-20 17:10:03.215 +06:00 [INF] Application Starting up
+2021-09-20 17:10:20.194 +06:00 [ERR] Connection ID "17077649797189468213", Request ID "80000036-0002-ed00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+2021-09-20 17:10:20.216 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:10:20.235 +06:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: The response has been aborted due to an unhandled application exception.
+ ---> System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnStarting(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.<>c.<.cctor>b__12_0(Object state)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnStarting()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAbortedException()
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.InitializeResponse(Boolean flushHeaders)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.<>c__DisplayClass367_0.<<WriteAsync>g__WriteFirstAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 17:10:20.236 +06:00 [ERR] Connection ID "17077649797189468213", Request ID "80000036-0002-ed00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer' cannot serialize an object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.DefaultTempDataSerializer.Serialize(IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.SaveTempData(HttpContext context, IDictionary`2 values)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.Save()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.SaveTempData(IActionResult result, ITempDataDictionaryFactory factory, IList`1 filters, HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.OnResultExecuted(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-09-20 17:11:39.611 +06:00 [INF] Application Starting up
+2021-09-20 17:14:38.625 +06:00 [INF] Application Starting up
+2021-09-20 17:17:34.628 +06:00 [INF] Application Starting up
+2021-09-20 17:27:30.984 +06:00 [INF] Application Starting up
+2021-09-20 17:54:28.307 +06:00 [INF] Application Starting up
+2021-09-20 17:54:50.774 +06:00 [INF] Application Starting up
+2021-09-20 17:57:04.938 +06:00 [INF] Application Starting up
+2021-09-20 17:58:19.357 +06:00 [INF] Application Starting up
+2021-09-20 18:00:13.475 +06:00 [INF] Application Starting up
+2021-09-20 18:01:13.237 +06:00 [INF] Application Starting up
+2021-09-20 18:02:41.844 +06:00 [INF] Application Starting up
+2021-09-20 18:04:34.597 +06:00 [INF] Application Starting up
+2021-09-20 18:05:57.214 +06:00 [INF] Application Starting up
+2021-09-20 18:06:52.877 +06:00 [INF] Application Starting up
+2021-09-20 18:07:47.418 +06:00 [INF] Application Starting up
+2021-09-20 18:08:47.221 +06:00 [INF] Application Starting up
+2021-09-20 18:10:16.316 +06:00 [INF] Application Starting up
+2021-09-20 18:11:20.632 +06:00 [INF] Application Starting up
+2021-09-20 18:13:28.837 +06:00 [INF] Application Starting up
+2021-09-20 18:14:48.547 +06:00 [INF] Application Starting up
+2021-09-20 18:15:29.180 +06:00 [INF] Application Starting up
+2021-09-20 18:15:44.363 +06:00 [INF] Application Starting up
+2021-09-20 18:24:01.166 +06:00 [INF] Application Starting up
+2021-09-20 18:25:12.269 +06:00 [INF] Application Starting up
+2021-09-20 18:26:47.121 +06:00 [INF] Application Starting up
+2021-09-20 18:27:33.571 +06:00 [INF] Application Starting up
+2021-09-20 18:29:51.945 +06:00 [INF] Application Starting up
+2021-09-20 18:33:05.354 +06:00 [INF] Application Starting up
+2021-09-20 19:08:09.422 +06:00 [INF] Application Starting up
+2021-09-20 19:09:37.170 +06:00 [INF] Application Starting up
+2021-09-20 19:10:15.477 +06:00 [INF] Application Starting up
+2021-09-20 19:38:42.796 +06:00 [INF] Application Starting up
+2021-09-20 19:39:27.039 +06:00 [INF] Application Starting up
+2021-09-20 19:40:32.219 +06:00 [INF] Application Starting up
+2021-09-20 19:40:41.948 +06:00 [ERR] The view '/DataImporter/ExportFile?groupid=3' was not found. Searched locations: ["/DataImporter/ExportFile?groupid=3"]
+2021-09-20 19:40:41.957 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view '/DataImporter/ExportFile?groupid=3' was not found. The following locations were searched:
+/DataImporter/ExportFile?groupid=3
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 19:42:22.265 +06:00 [INF] Application Starting up
+2021-09-20 19:43:38.647 +06:00 [INF] Application Starting up
+2021-09-20 19:45:47.609 +06:00 [INF] Application Starting up
+2021-09-20 19:47:37.092 +06:00 [INF] Application Starting up
+2021-09-20 19:47:58.342 +06:00 [INF] Application Starting up
+2021-09-20 21:51:08.340 +06:00 [INF] Application Starting up
+2021-09-20 21:51:10.052 +06:00 [WRN] The temp data cookie .AspNetCore.Mvc.CookieTempDataProvider could not be loaded.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.LoadTempData(HttpContext context)
+2021-09-20 21:51:47.636 +06:00 [INF] Application Starting up
+2021-09-20 21:52:41.469 +06:00 [INF] Application Starting up
+2021-09-20 22:51:18.096 +06:00 [INF] Application Starting up
+2021-09-20 22:56:23.068 +06:00 [INF] Application Starting up
+2021-09-20 22:57:17.965 +06:00 [INF] Application Starting up
+2021-09-20 23:00:24.400 +06:00 [INF] Application Starting up
+2021-09-20 23:02:04.096 +06:00 [INF] Application Starting up
+2021-09-20 23:16:44.300 +06:00 [INF] Application Starting up
+2021-09-20 23:19:22.800 +06:00 [INF] Application Starting up
+2021-09-20 23:24:49.605 +06:00 [INF] Application Starting up
+2021-09-20 23:56:32.263 +06:00 [INF] Application Starting up
+2021-09-20 23:59:55.257 +06:00 [INF] Application Starting up

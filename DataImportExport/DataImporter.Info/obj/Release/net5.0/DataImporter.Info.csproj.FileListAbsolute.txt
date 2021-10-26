@@ -1,0 +1,15 @@
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\DataImporter.Info.deps.json
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\DataImporter.Info.dll
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\ref\DataImporter.Info.dll
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\DataImporter.Info.pdb
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\DataImporter.Data.dll
+D:\#FinalProject\3\DataImporter.Info\bin\Release\net5.0\DataImporter.Data.pdb
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.csprojAssemblyReference.cache
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.GeneratedMSBuildEditorConfig.editorconfig
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.AssemblyInfoInputs.cache
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.AssemblyInfo.cs
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.csproj.CoreCompileInputs.cache
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.csproj.CopyComplete
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.dll
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\ref\DataImporter.Info.dll
+D:\#FinalProject\3\DataImporter.Info\obj\Release\net5.0\DataImporter.Info.pdb

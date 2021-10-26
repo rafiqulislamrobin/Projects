@@ -1,0 +1,56 @@
+﻿@model EmailSenderModel
+@{
+    ViewData["Title"] = "EmailSender";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6" style="color:black">
+                <h1>Email</h1>
+            </div>
+
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header" style="color: black;background-color: #9c94d6">
+                        <h3 class="card-title">Give an Email Address</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form method="post" asp-controller="DataImporter" asp-action="EmailSender" asp-antiforgery="true">
+                     
+                        
+                        <div class="card-body">
+                            <div class="form-group row">
+
+                                <label asp-for="Email">Email</label>
+                                <input type="email" class="form-control" id="Email" asp-for="Email" required
+                                       placeholder="Email">
+
+                            </div>
+                            <div class="text-danger">
+                                @ViewBag.DuplicationMessage
+                            </div>
+
+                            <input type="hidden" asp-for="GroupId" />
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary" style="color: black;background-color: #9c94d6;border-color:#9c94d6">Send</button>
+                            <a asp-action="Index" asp-controller="DataImporter"
+                               class="btn btn-default float-right" style="color: black;background-color: #9c94d6">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\krato\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\krato\\.nuget\\packages"
+    ]
+  }
+}

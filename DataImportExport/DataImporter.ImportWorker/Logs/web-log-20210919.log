@@ -1,0 +1,195 @@
+2021-09-19 00:06:57.494 +06:00 [INF] Application Starting up
+2021-09-19 00:06:59.144 +06:00 [INF] Worker running at: "2021-09-19T00:06:59.1414976+06:00"
+2021-09-19 00:30:50.178 +06:00 [INF] Application Starting up
+2021-09-19 00:30:51.688 +06:00 [INF] Deleted 
+2021-09-19 00:30:51.690 +06:00 [INF] Worker running at: "2021-09-19T00:30:51.6901717+06:00"
+2021-09-19 19:09:33.186 +06:00 [INF] Application Starting up
+2021-09-19 19:19:08.504 +06:00 [INF] Application Starting up
+2021-09-19 19:19:52.558 +06:00 [INF] Deleted 
+2021-09-19 19:19:52.560 +06:00 [INF] Worker running at: "2021-09-19T19:19:52.5599092+06:00"
+2021-09-19 19:20:58.293 +06:00 [INF] Application Starting up
+2021-09-19 19:20:59.691 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:21:10.848 +06:00 [INF] Application Starting up
+2021-09-19 19:21:52.635 +06:00 [INF] Application Starting up
+2021-09-19 19:25:35.990 +06:00 [INF] Deleted 
+2021-09-19 19:25:36.477 +06:00 [INF] Worker running at: "2021-09-19T19:25:36.4763551+06:00"
+2021-09-19 19:34:23.138 +06:00 [INF] Application Starting up
+2021-09-19 19:34:24.644 +06:00 [FTL] Application start-up failed
+System.IO.FileNotFoundException: Could not find file 'D:\#FinalProject\3\DataImporter\wwwroot\Excel\Book21.xlsx'.
+File name: 'D:\#FinalProject\3\DataImporter\wwwroot\Excel\Book21.xlsx'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:35:55.537 +06:00 [INF] Application Starting up
+2021-09-19 19:37:34.580 +06:00 [INF] Application Starting up
+2021-09-19 19:37:50.844 +06:00 [INF] Application Starting up
+2021-09-19 19:37:52.338 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:37:57.933 +06:00 [INF] Application Starting up
+2021-09-19 19:37:59.470 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:38:18.241 +06:00 [INF] Application Starting up
+2021-09-19 19:38:19.642 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:38:34.951 +06:00 [INF] Application Starting up
+2021-09-19 19:39:52.981 +06:00 [INF] Application Starting up
+2021-09-19 19:39:54.463 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:40:18.777 +06:00 [INF] Application Starting up
+2021-09-19 19:41:04.348 +06:00 [INF] Application Starting up
+2021-09-19 19:41:05.860 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 196
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 19:41:22.496 +06:00 [INF] Application Starting up
+2021-09-19 19:41:26.164 +06:00 [INF] Deleted 
+2021-09-19 19:41:26.166 +06:00 [INF] Worker running at: "2021-09-19T19:41:26.1662873+06:00"
+2021-09-19 19:43:04.668 +06:00 [INF] Application Starting up
+2021-09-19 19:43:06.086 +06:00 [FTL] Application start-up failed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'FilePaths'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DataImporter.Data.Repository`2.GetAll() in D:\#FinalProject\DataImporter\DataImporter.Data\Repository.cs:line 93
+   at DataImporter.Info.Services.DataImporterService.CheckImportStatus() in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 29
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 26
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+ClientConnectionId:e92248b7-7b0e-4f10-a5b5-756d53c26d0c
+Error Number:208,State:1,Class:16
+2021-09-19 19:46:37.835 +06:00 [INF] Application Starting up
+2021-09-19 19:46:39.426 +06:00 [INF] Deleted 
+2021-09-19 19:46:39.428 +06:00 [INF] Worker running at: "2021-09-19T19:46:39.4278930+06:00"
+2021-09-19 19:50:44.717 +06:00 [INF] Application Starting up
+2021-09-19 19:50:46.398 +06:00 [INF] Deleted 
+2021-09-19 19:50:46.400 +06:00 [INF] Worker running at: "2021-09-19T19:50:46.3999054+06:00"
+2021-09-19 19:52:39.526 +06:00 [INF] Application Starting up
+2021-09-19 19:53:12.774 +06:00 [INF] Application Starting up
+2021-09-19 19:58:12.595 +06:00 [INF] Application Starting up
+2021-09-19 19:58:14.271 +06:00 [INF] Deleted 
+2021-09-19 19:58:14.273 +06:00 [INF] Worker running at: "2021-09-19T19:58:14.2731908+06:00"
+2021-09-19 20:21:00.438 +06:00 [INF] Application Starting up
+2021-09-19 20:21:02.011 +06:00 [INF] Deleted 
+2021-09-19 20:21:02.013 +06:00 [INF] Worker running at: "2021-09-19T20:21:02.0126462+06:00"
+2021-09-19 20:47:54.526 +06:00 [INF] Application Starting up
+2021-09-19 20:47:55.939 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId, Int32 GroupId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 195
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 20:49:16.860 +06:00 [INF] Application Starting up
+2021-09-19 20:49:18.429 +06:00 [INF] Deleted 
+2021-09-19 20:49:18.431 +06:00 [INF] Worker running at: "2021-09-19T20:49:18.4307781+06:00"
+2021-09-19 20:50:22.989 +06:00 [INF] Application Starting up
+2021-09-19 20:50:24.553 +06:00 [INF] Deleted 
+2021-09-19 20:50:24.554 +06:00 [INF] Worker running at: "2021-09-19T20:50:24.5543302+06:00"
+2021-09-19 21:16:10.150 +06:00 [INF] Application Starting up
+2021-09-19 21:16:11.590 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId, Int32 GroupId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 197
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-19 21:36:34.503 +06:00 [INF] Application Starting up
+2021-09-19 21:36:36.044 +06:00 [INF] Deleted 
+2021-09-19 21:36:36.046 +06:00 [INF] Worker running at: "2021-09-19T21:36:36.0460035+06:00"

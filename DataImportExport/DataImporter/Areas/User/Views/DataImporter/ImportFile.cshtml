@@ -1,0 +1,71 @@
+﻿
+@model FilePathModel
+@{
+    ViewData["Title"] = "ImportFile";
+}
+
+<link href="~/css/chosen.min.css" rel="stylesheet" />
+
+
+<form method="post" enctype="multipart/form-data" asp-controller="DataImporter" asp-action="ImportFile">
+
+    <div asp-validation-summary="All" class="container-fluid">
+        <div class="card-header" style="color:black">
+            <h3 class="card-title" >Upload File</h3>
+        </div>
+
+        <div class="card-body">
+            <div class="form-group" style="color:black">
+                <label for="file">File input</label>
+                <div class="input-group" style="width:30%">
+                    <div class="custom-file " type="file">
+                        <input class="custom-file-label" type="file" id="file" name="file" required
+                               accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                        <label class="custom-file-label" id="file" for="file" style="color:black">Choose file (excel only)</label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card-body" type="number" style="color:black">
+            <label>Groups</label>
+
+            @Html.DropDownListFor(m => m.GroupId, ViewBag.GroupList as SelectList, "--Select A Group--", new { id = "selectTwo", required = "required" })
+
+        </div>
+        <!-- /.card-body -->
+        <input type="hidden" asp-for="GroupId" />
+        
+            <button type="submit" class="btn btn-primary"
+                    style="color: black;background-color: white;border-color:black;margin-left:25px">
+                Next
+            </button>
+
+        
+    </div>
+
+</form>
+<h2 style="color:black;text-align:center"> @ViewBag.HeaderMissMatch</h2>
+<h2 style="color:black;text-align:center">@ViewBag.FileProcess</h2>
+
+@section Scripts
+{
+
+    <script>
+        $('#file').on('change', function () {
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
+        $(function () {
+            $('#selectTwo').chosen();
+        });
+    </script>
+
+    <script src="~/js/chosen.jquery.min.js"></script>
+
+}

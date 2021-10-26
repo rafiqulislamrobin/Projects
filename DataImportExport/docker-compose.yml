@@ -1,0 +1,39 @@
+version: "3"
+services:
+    web:
+        build:
+            context: .
+            dockerfile: DataImporter/Dockerfile
+        image: dataimporterweb
+        container_name: dataimportercontainer
+        restart: unless-stopped
+        tty: true
+        env_file: 
+            - web.env
+        volumes:
+            - app-volume:/app/wwwroot/excelfile
+        ports:
+            - "8000:80"
+        depends_on:
+            - db
+    workerservice:
+        build: 
+            context: .
+            dockerfile: DataImporter.ImportWorker/DockerfileWorker
+        image: dataimporterworker
+        restart: unless-stopped
+        env_file: 
+            - web.env
+        depends_on: 
+            - db 
+        volumes:
+            - app-volume:/app/wwwroot/excelfile
+    db:
+        image: "mcr.microsoft.com/mssql/server:2019-latest"
+        restart: unless-stopped
+        env_file: 
+            - db.env
+        ports:
+            - "1401:1433"
+volumes:
+     app-volume:

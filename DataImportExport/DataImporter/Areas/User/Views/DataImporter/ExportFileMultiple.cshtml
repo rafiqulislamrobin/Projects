@@ -1,0 +1,78 @@
+﻿@model ExportFileModel
+@{
+    ViewData["Title"] = "ExportFileMultiple";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <link href="~/css/chosen.min.css" rel="stylesheet" />
+}
+
+@section Scripts
+{
+    <script src="/user/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/user/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+
+        $(function () {
+            $('#selectTwo').chosen();
+        });
+        $(function () {
+
+            $('#Contact').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "autoWidth": false,
+                "responsive": true
+
+            });
+        });
+    </script>
+
+    <script src="~/js/chosen.jquery.min.js"></script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <form method="post" enctype="multipart/form-data" asp-controller="DataImporter" asp-action="ExportFileMultiple">
+
+
+
+        <div asp-validation-summary="All" class="container-fluid">
+            <div class="card-header" style="color: black;">
+                <h3 class="card-title">Export File</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+
+            <div class="card-body" type="select" style="color: black;">
+                <label for="select group" id="groupid">Choice group:  </label>
+                @Html.DropDownListFor(m => m.GroupIds, ViewBag.GroupList as MultiSelectList, "--Select A Group--",
+               new { required = "required", id = "selectTwo", multiple = "multiple" })
+
+
+            </div>
+            <!-- /.card-body -->
+            <input type="hidden" asp-for="GroupId" value="@Model.GroupIds " id="groupid" />
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary"
+                        style="color: black;background-color: #9c94d6;border-color:#9c94d6">
+                    Download
+                </button>
+            </div>
+
+        </div>
+
+    </form>
+
+         
+    
+
+</section>
+
+
+
+

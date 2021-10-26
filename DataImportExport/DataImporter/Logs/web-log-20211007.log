@@ -1,0 +1,29 @@
+2021-10-07 17:57:13.497 +06:00 [INF] Application Starting up
+2021-10-07 17:57:23.656 +06:00 [INF] User logged in.
+2021-10-07 17:58:12.697 +06:00 [INF] Application Starting up
+2021-10-07 17:58:20.181 +06:00 [INF] User logged in.
+2021-10-07 20:09:05.375 +06:00 [INF] Application Starting up
+2021-10-07 20:09:16.526 +06:00 [INF] User logged in.
+2021-10-07 20:23:16.078 +06:00 [INF] Application Starting up
+2021-10-07 20:23:24.658 +06:00 [INF] User logged in.
+2021-10-07 20:23:33.804 +06:00 [ERR] Fail to sent email
+System.IO.FileNotFoundException: Could not find file 'D:\#FinalProject\3\DataImporter\wwwroot\ExportFile\680258dd-547e-4f0c-aaa1-f6e33b3702c0.xlsx'.
+File name: 'D:\#FinalProject\3\DataImporter\wwwroot\ExportFile\680258dd-547e-4f0c-aaa1-f6e33b3702c0.xlsx'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.AttachmentBase..ctor(String fileName)
+   at System.Net.Mail.Attachment..ctor(String fileName)
+   at DataImporter.Areas.User.Models.EmailSenderModel.SendEmail(String Email) in D:\#FinalProject\3\DataImporter\Areas\User\Models\EmailSenderModel.cs:line 66
+2021-10-07 20:25:06.304 +06:00 [INF] Application Starting up
+2021-10-07 20:25:13.544 +06:00 [INF] User logged in.
+2021-10-07 22:04:08.057 +06:00 [INF] Application Starting up
+2021-10-07 22:05:34.590 +06:00 [INF] User logged in.
+2021-10-07 22:16:30.200 +06:00 [INF] Application Starting up
+2021-10-07 22:16:39.516 +06:00 [INF] User logged in.
+2021-10-07 22:17:46.398 +06:00 [INF] Application Starting up
+2021-10-07 22:17:53.525 +06:00 [INF] User logged in.
+2021-10-07 23:56:34.143 +06:00 [INF] Application Starting up
+2021-10-07 23:57:02.803 +06:00 [INF] User logged in.

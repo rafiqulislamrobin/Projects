@@ -1,0 +1,55 @@
+﻿@model EditGroupModel
+@{
+    ViewData["Title"] = "EditGroup";
+}
+
+<section class="content-header">
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-sm-6">
+            <h1>Edit Group</h1>
+        </div>
+
+    </div>
+</div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header" style="color: black;background-color: #9c94d6">
+                        <h3 class="card-title">Edit</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form method="post" asp-controller="DataImporter" asp-action="EditGroup" asp-antiforgery="true">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="card-body">
+                            <div class="form-group row">
+
+                                <label asp-for="Name">Group Name</label>
+                                <input type="text" class="form-control" id="Name" asp-for="Name"
+                                       placeholder="Group Name">
+
+                            </div>
+                            <div class="text-danger">
+                                @ViewBag.DuplicationMessage
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary" style="color: black;background-color: #9c94d6;border-color:#9c94d6">Update</button>
+                            <a asp-action="ViewGroups" asp-controller="DataImporter"
+                               class="btn btn-default float-right" style="color: black;background-color: #9c94d6">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,309 @@
+2021-09-20 00:50:13.979 +06:00 [INF] Application Starting up
+2021-09-20 00:50:15.572 +06:00 [INF] Deleted 
+2021-09-20 00:50:15.574 +06:00 [INF] Worker running at: "2021-09-20T00:50:15.5738159+06:00"
+2021-09-20 00:50:33.447 +06:00 [INF] Application Starting up
+2021-09-20 00:50:34.825 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId, Int32 GroupId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 203
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-20 01:06:07.549 +06:00 [INF] Application Starting up
+2021-09-20 01:06:09.157 +06:00 [INF] Deleted 
+2021-09-20 01:06:09.159 +06:00 [INF] Worker running at: "2021-09-20T01:06:09.1587500+06:00"
+2021-09-20 18:31:28.652 +06:00 [INF] Application Starting up
+2021-09-20 18:31:30.368 +06:00 [INF] Deleted 
+2021-09-20 18:31:30.370 +06:00 [INF] Worker running at: "2021-09-20T18:31:30.3699269+06:00"
+2021-09-20 18:32:30.441 +06:00 [INF] Deleted 
+2021-09-20 18:32:30.441 +06:00 [INF] Worker running at: "2021-09-20T18:32:30.4413068+06:00"
+2021-09-20 22:18:52.016 +06:00 [INF] Application Starting up
+2021-09-20 22:19:02.386 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb(String fileroot, String fileStatus, Int32 fileId, Int32 GroupId) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 239
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-20 22:28:43.833 +06:00 [INF] Application Starting up
+2021-09-20 22:29:58.661 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb() in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 246
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-20 22:30:46.786 +06:00 [INF] Application Starting up
+2021-09-20 22:30:48.078 +06:00 [FTL] Application start-up failed
+System.ArgumentException: Empty path name is not legal. (Parameter 'path')
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at DataImporter.Info.Services.DataImporterService.SaveExcelDatatoDb() in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 246
+   at DataImporter.ImportWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\#FinalProject\3\DataImporter.ImportWorker\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.ImportWorker.Program.Main(String[] args) in D:\#FinalProject\3\DataImporter.ImportWorker\Program.cs:line 47
+2021-09-20 22:33:52.134 +06:00 [INF] Application Starting up
+2021-09-20 22:35:07.335 +06:00 [INF] Application Starting up
+2021-09-20 22:37:14.195 +06:00 [INF] Application Starting up
+2021-09-20 22:40:53.258 +06:00 [INF] Application Starting up
+2021-09-20 22:41:02.071 +06:00 [INF] Application Starting up
+2021-09-20 22:48:15.655 +06:00 [INF] Application Starting up
+2021-09-20 22:48:21.000 +06:00 [INF] no file to deleted
+2021-09-20 22:48:21.233 +06:00 [INF] Worker running at: "2021-09-20T22:48:21.2323947+06:00"
+2021-09-20 22:51:17.797 +06:00 [INF] Application Starting up
+2021-09-20 22:51:19.168 +06:00 [INF] no file to deleted
+2021-09-20 22:51:19.169 +06:00 [INF] Worker running at: "2021-09-20T22:51:19.1690025+06:00"
+2021-09-20 22:52:19.370 +06:00 [INF] Deleted 
+2021-09-20 22:52:19.370 +06:00 [INF] Worker running at: "2021-09-20T22:52:19.3708706+06:00"
+2021-09-20 22:53:19.386 +06:00 [INF] no file to deleted
+2021-09-20 22:53:19.388 +06:00 [INF] Worker running at: "2021-09-20T22:53:19.3880247+06:00"
+2021-09-20 22:56:22.830 +06:00 [INF] Application Starting up
+2021-09-20 22:56:24.244 +06:00 [INF] no file to deleted
+2021-09-20 22:56:24.246 +06:00 [INF] Worker running at: "2021-09-20T22:56:24.2462027+06:00"
+2021-09-20 22:57:17.663 +06:00 [INF] Application Starting up
+2021-09-20 22:57:19.089 +06:00 [INF] no file to deleted
+2021-09-20 22:57:19.090 +06:00 [INF] Worker running at: "2021-09-20T22:57:19.0903054+06:00"
+2021-09-20 22:57:39.293 +06:00 [INF] Deleted 
+2021-09-20 22:57:39.293 +06:00 [INF] Worker running at: "2021-09-20T22:57:39.2935888+06:00"
+2021-09-20 22:57:59.300 +06:00 [INF] no file to deleted
+2021-09-20 22:57:59.300 +06:00 [INF] Worker running at: "2021-09-20T22:57:59.3002942+06:00"
+2021-09-20 22:58:19.307 +06:00 [INF] no file to deleted
+2021-09-20 22:58:19.308 +06:00 [INF] Worker running at: "2021-09-20T22:58:19.3078460+06:00"
+2021-09-20 23:00:24.089 +06:00 [INF] Application Starting up
+2021-09-20 23:00:25.530 +06:00 [INF] no file to deleted
+2021-09-20 23:00:25.532 +06:00 [INF] Worker running at: "2021-09-20T23:00:25.5317314+06:00"
+2021-09-20 23:00:45.731 +06:00 [INF] Deleted 
+2021-09-20 23:00:45.731 +06:00 [INF] Worker running at: "2021-09-20T23:00:45.7317049+06:00"
+2021-09-20 23:01:05.735 +06:00 [INF] no file to deleted
+2021-09-20 23:01:05.735 +06:00 [INF] Worker running at: "2021-09-20T23:01:05.7356192+06:00"
+2021-09-20 23:01:25.780 +06:00 [INF] no file to deleted
+2021-09-20 23:01:25.780 +06:00 [INF] Worker running at: "2021-09-20T23:01:25.7803778+06:00"
+2021-09-20 23:01:45.794 +06:00 [INF] no file to deleted
+2021-09-20 23:01:45.794 +06:00 [INF] Worker running at: "2021-09-20T23:01:45.7942958+06:00"
+2021-09-20 23:02:03.742 +06:00 [INF] Application Starting up
+2021-09-20 23:02:05.155 +06:00 [INF] no file to deleted
+2021-09-20 23:02:05.157 +06:00 [INF] Worker running at: "2021-09-20T23:02:05.1568244+06:00"
+2021-09-20 23:02:25.179 +06:00 [INF] no file to deleted
+2021-09-20 23:02:25.179 +06:00 [INF] Worker running at: "2021-09-20T23:02:25.1793364+06:00"
+2021-09-20 23:02:45.214 +06:00 [INF] no file to deleted
+2021-09-20 23:02:45.215 +06:00 [INF] Worker running at: "2021-09-20T23:02:45.2150263+06:00"
+2021-09-20 23:03:05.229 +06:00 [INF] no file to deleted
+2021-09-20 23:03:05.229 +06:00 [INF] Worker running at: "2021-09-20T23:03:05.2292689+06:00"
+2021-09-20 23:03:25.248 +06:00 [INF] no file to deleted
+2021-09-20 23:03:25.248 +06:00 [INF] Worker running at: "2021-09-20T23:03:25.2481108+06:00"
+2021-09-20 23:16:44.139 +06:00 [INF] Application Starting up
+2021-09-20 23:16:45.411 +06:00 [INF] no file to delete
+2021-09-20 23:16:45.413 +06:00 [INF] Worker running at: "2021-09-20T23:16:45.4126268+06:00"
+2021-09-20 23:17:05.434 +06:00 [INF] no file to delete
+2021-09-20 23:17:05.434 +06:00 [INF] Worker running at: "2021-09-20T23:17:05.4347601+06:00"
+2021-09-20 23:17:25.617 +06:00 [INF] Deleted 
+2021-09-20 23:17:25.617 +06:00 [INF] Worker running at: "2021-09-20T23:17:25.6172611+06:00"
+2021-09-20 23:17:45.631 +06:00 [INF] no file to delete
+2021-09-20 23:17:45.631 +06:00 [INF] Worker running at: "2021-09-20T23:17:45.6311705+06:00"
+2021-09-20 23:18:09.168 +06:00 [INF] no file to delete
+2021-09-20 23:18:09.168 +06:00 [INF] Worker running at: "2021-09-20T23:18:09.1689741+06:00"
+2021-09-20 23:19:22.481 +06:00 [INF] Application Starting up
+2021-09-20 23:19:23.938 +06:00 [INF] no file to delete
+2021-09-20 23:19:23.939 +06:00 [INF] Worker running at: "2021-09-20T23:19:23.9393997+06:00"
+2021-09-20 23:19:45.737 +06:00 [INF] no file to delete
+2021-09-20 23:19:45.737 +06:00 [INF] Worker running at: "2021-09-20T23:19:45.7379588+06:00"
+2021-09-20 23:20:13.751 +06:00 [INF] Deleted 
+2021-09-20 23:20:13.751 +06:00 [INF] Worker running at: "2021-09-20T23:20:13.7513901+06:00"
+2021-09-20 23:20:33.763 +06:00 [INF] no file to delete
+2021-09-20 23:20:33.763 +06:00 [INF] Worker running at: "2021-09-20T23:20:33.7632627+06:00"
+2021-09-20 23:20:54.412 +06:00 [INF] no file to delete
+2021-09-20 23:20:54.413 +06:00 [INF] Worker running at: "2021-09-20T23:20:54.4129852+06:00"
+2021-09-20 23:22:49.273 +06:00 [INF] no file to delete
+2021-09-20 23:22:49.275 +06:00 [INF] Worker running at: "2021-09-20T23:22:49.2751938+06:00"
+2021-09-20 23:23:11.377 +06:00 [INF] no file to delete
+2021-09-20 23:23:11.377 +06:00 [INF] Worker running at: "2021-09-20T23:23:11.3772541+06:00"
+2021-09-20 23:23:31.521 +06:00 [INF] no file to delete
+2021-09-20 23:23:31.522 +06:00 [INF] Worker running at: "2021-09-20T23:23:31.5220415+06:00"
+2021-09-20 23:24:49.391 +06:00 [INF] Application Starting up
+2021-09-20 23:24:50.764 +06:00 [INF] no file to delete
+2021-09-20 23:24:50.766 +06:00 [INF] Worker running at: "2021-09-20T23:24:50.7656528+06:00"
+2021-09-20 23:25:10.783 +06:00 [INF] no file to delete
+2021-09-20 23:25:10.783 +06:00 [INF] Worker running at: "2021-09-20T23:25:10.7835746+06:00"
+2021-09-20 23:25:30.794 +06:00 [INF] no file to delete
+2021-09-20 23:25:30.795 +06:00 [INF] Worker running at: "2021-09-20T23:25:30.7951376+06:00"
+2021-09-20 23:25:50.805 +06:00 [INF] no file to delete
+2021-09-20 23:25:50.805 +06:00 [INF] Worker running at: "2021-09-20T23:25:50.8058898+06:00"
+2021-09-20 23:26:10.816 +06:00 [INF] no file to delete
+2021-09-20 23:26:10.816 +06:00 [INF] Worker running at: "2021-09-20T23:26:10.8165600+06:00"
+2021-09-20 23:26:30.831 +06:00 [INF] no file to delete
+2021-09-20 23:26:30.831 +06:00 [INF] Worker running at: "2021-09-20T23:26:30.8312642+06:00"
+2021-09-20 23:26:50.846 +06:00 [INF] no file to delete
+2021-09-20 23:26:50.846 +06:00 [INF] Worker running at: "2021-09-20T23:26:50.8463864+06:00"
+2021-09-20 23:27:10.867 +06:00 [INF] no file to delete
+2021-09-20 23:27:10.867 +06:00 [INF] Worker running at: "2021-09-20T23:27:10.8676264+06:00"
+2021-09-20 23:27:30.873 +06:00 [INF] no file to delete
+2021-09-20 23:27:30.873 +06:00 [INF] Worker running at: "2021-09-20T23:27:30.8731472+06:00"
+2021-09-20 23:27:50.877 +06:00 [INF] no file to delete
+2021-09-20 23:27:50.877 +06:00 [INF] Worker running at: "2021-09-20T23:27:50.8776761+06:00"
+2021-09-20 23:28:10.893 +06:00 [INF] no file to delete
+2021-09-20 23:28:10.893 +06:00 [INF] Worker running at: "2021-09-20T23:28:10.8932637+06:00"
+2021-09-20 23:28:30.940 +06:00 [INF] no file to delete
+2021-09-20 23:28:30.940 +06:00 [INF] Worker running at: "2021-09-20T23:28:30.9409031+06:00"
+2021-09-20 23:28:50.944 +06:00 [INF] no file to delete
+2021-09-20 23:28:50.945 +06:00 [INF] Worker running at: "2021-09-20T23:28:50.9449727+06:00"
+2021-09-20 23:29:10.961 +06:00 [INF] no file to delete
+2021-09-20 23:29:10.961 +06:00 [INF] Worker running at: "2021-09-20T23:29:10.9613208+06:00"
+2021-09-20 23:29:30.969 +06:00 [INF] no file to delete
+2021-09-20 23:29:30.969 +06:00 [INF] Worker running at: "2021-09-20T23:29:30.9699575+06:00"
+2021-09-20 23:29:50.981 +06:00 [INF] no file to delete
+2021-09-20 23:29:50.981 +06:00 [INF] Worker running at: "2021-09-20T23:29:50.9818496+06:00"
+2021-09-20 23:30:10.994 +06:00 [INF] no file to delete
+2021-09-20 23:30:10.994 +06:00 [INF] Worker running at: "2021-09-20T23:30:10.9941387+06:00"
+2021-09-20 23:30:31.005 +06:00 [INF] no file to delete
+2021-09-20 23:30:31.005 +06:00 [INF] Worker running at: "2021-09-20T23:30:31.0056542+06:00"
+2021-09-20 23:30:51.029 +06:00 [INF] no file to delete
+2021-09-20 23:30:51.029 +06:00 [INF] Worker running at: "2021-09-20T23:30:51.0295368+06:00"
+2021-09-20 23:31:11.039 +06:00 [INF] no file to delete
+2021-09-20 23:31:11.039 +06:00 [INF] Worker running at: "2021-09-20T23:31:11.0396695+06:00"
+2021-09-20 23:31:31.052 +06:00 [INF] no file to delete
+2021-09-20 23:31:31.052 +06:00 [INF] Worker running at: "2021-09-20T23:31:31.0529309+06:00"
+2021-09-20 23:31:51.067 +06:00 [INF] no file to delete
+2021-09-20 23:31:51.067 +06:00 [INF] Worker running at: "2021-09-20T23:31:51.0673882+06:00"
+2021-09-20 23:32:11.073 +06:00 [INF] no file to delete
+2021-09-20 23:32:11.073 +06:00 [INF] Worker running at: "2021-09-20T23:32:11.0731903+06:00"
+2021-09-20 23:32:31.078 +06:00 [INF] no file to delete
+2021-09-20 23:32:31.078 +06:00 [INF] Worker running at: "2021-09-20T23:32:31.0788419+06:00"
+2021-09-20 23:32:51.097 +06:00 [INF] no file to delete
+2021-09-20 23:32:51.097 +06:00 [INF] Worker running at: "2021-09-20T23:32:51.0976677+06:00"
+2021-09-20 23:33:11.113 +06:00 [INF] no file to delete
+2021-09-20 23:33:11.114 +06:00 [INF] Worker running at: "2021-09-20T23:33:11.1140159+06:00"
+2021-09-20 23:33:31.122 +06:00 [INF] no file to delete
+2021-09-20 23:33:31.122 +06:00 [INF] Worker running at: "2021-09-20T23:33:31.1227843+06:00"
+2021-09-20 23:33:51.130 +06:00 [INF] no file to delete
+2021-09-20 23:33:51.131 +06:00 [INF] Worker running at: "2021-09-20T23:33:51.1310484+06:00"
+2021-09-20 23:34:11.143 +06:00 [INF] no file to delete
+2021-09-20 23:34:11.143 +06:00 [INF] Worker running at: "2021-09-20T23:34:11.1433910+06:00"
+2021-09-20 23:34:31.155 +06:00 [INF] no file to delete
+2021-09-20 23:34:31.155 +06:00 [INF] Worker running at: "2021-09-20T23:34:31.1556682+06:00"
+2021-09-20 23:34:51.191 +06:00 [INF] no file to delete
+2021-09-20 23:34:51.191 +06:00 [INF] Worker running at: "2021-09-20T23:34:51.1912803+06:00"
+2021-09-20 23:35:11.196 +06:00 [INF] no file to delete
+2021-09-20 23:35:11.196 +06:00 [INF] Worker running at: "2021-09-20T23:35:11.1966702+06:00"
+2021-09-20 23:35:31.215 +06:00 [INF] no file to delete
+2021-09-20 23:35:31.215 +06:00 [INF] Worker running at: "2021-09-20T23:35:31.2155447+06:00"
+2021-09-20 23:35:51.225 +06:00 [INF] no file to delete
+2021-09-20 23:35:51.225 +06:00 [INF] Worker running at: "2021-09-20T23:35:51.2256783+06:00"
+2021-09-20 23:36:11.229 +06:00 [INF] no file to delete
+2021-09-20 23:36:11.229 +06:00 [INF] Worker running at: "2021-09-20T23:36:11.2292780+06:00"
+2021-09-20 23:36:31.237 +06:00 [INF] no file to delete
+2021-09-20 23:36:31.237 +06:00 [INF] Worker running at: "2021-09-20T23:36:31.2376878+06:00"
+2021-09-20 23:36:51.256 +06:00 [INF] no file to delete
+2021-09-20 23:36:51.256 +06:00 [INF] Worker running at: "2021-09-20T23:36:51.2563269+06:00"
+2021-09-20 23:37:11.261 +06:00 [INF] no file to delete
+2021-09-20 23:37:11.261 +06:00 [INF] Worker running at: "2021-09-20T23:37:11.2618872+06:00"
+2021-09-20 23:37:31.267 +06:00 [INF] no file to delete
+2021-09-20 23:37:31.268 +06:00 [INF] Worker running at: "2021-09-20T23:37:31.2680045+06:00"
+2021-09-20 23:37:51.283 +06:00 [INF] no file to delete
+2021-09-20 23:37:51.283 +06:00 [INF] Worker running at: "2021-09-20T23:37:51.2839329+06:00"
+2021-09-20 23:38:11.299 +06:00 [INF] no file to delete
+2021-09-20 23:38:11.299 +06:00 [INF] Worker running at: "2021-09-20T23:38:11.2992580+06:00"
+2021-09-20 23:38:31.315 +06:00 [INF] no file to delete
+2021-09-20 23:38:31.315 +06:00 [INF] Worker running at: "2021-09-20T23:38:31.3151588+06:00"
+2021-09-20 23:38:51.319 +06:00 [INF] no file to delete
+2021-09-20 23:38:51.321 +06:00 [INF] Worker running at: "2021-09-20T23:38:51.3213283+06:00"
+2021-09-20 23:39:11.329 +06:00 [INF] no file to delete
+2021-09-20 23:39:11.329 +06:00 [INF] Worker running at: "2021-09-20T23:39:11.3296286+06:00"
+2021-09-20 23:39:31.365 +06:00 [INF] no file to delete
+2021-09-20 23:39:31.365 +06:00 [INF] Worker running at: "2021-09-20T23:39:31.3658527+06:00"
+2021-09-20 23:39:51.375 +06:00 [INF] no file to delete
+2021-09-20 23:39:51.375 +06:00 [INF] Worker running at: "2021-09-20T23:39:51.3758667+06:00"
+2021-09-20 23:40:11.417 +06:00 [INF] no file to delete
+2021-09-20 23:40:11.417 +06:00 [INF] Worker running at: "2021-09-20T23:40:11.4174943+06:00"
+2021-09-20 23:40:31.420 +06:00 [INF] no file to delete
+2021-09-20 23:40:31.420 +06:00 [INF] Worker running at: "2021-09-20T23:40:31.4205910+06:00"
+2021-09-20 23:40:51.434 +06:00 [INF] no file to delete
+2021-09-20 23:40:51.434 +06:00 [INF] Worker running at: "2021-09-20T23:40:51.4345414+06:00"
+2021-09-20 23:41:11.442 +06:00 [INF] no file to delete
+2021-09-20 23:41:11.442 +06:00 [INF] Worker running at: "2021-09-20T23:41:11.4424979+06:00"
+2021-09-20 23:41:31.458 +06:00 [INF] no file to delete
+2021-09-20 23:41:31.458 +06:00 [INF] Worker running at: "2021-09-20T23:41:31.4586524+06:00"
+2021-09-20 23:41:51.472 +06:00 [INF] no file to delete
+2021-09-20 23:41:51.473 +06:00 [INF] Worker running at: "2021-09-20T23:41:51.4733066+06:00"
+2021-09-20 23:42:11.477 +06:00 [INF] no file to delete
+2021-09-20 23:42:11.477 +06:00 [INF] Worker running at: "2021-09-20T23:42:11.4773362+06:00"
+2021-09-20 23:42:31.482 +06:00 [INF] no file to delete
+2021-09-20 23:42:31.482 +06:00 [INF] Worker running at: "2021-09-20T23:42:31.4828436+06:00"
+2021-09-20 23:42:51.492 +06:00 [INF] no file to delete
+2021-09-20 23:42:51.492 +06:00 [INF] Worker running at: "2021-09-20T23:42:51.4926008+06:00"
+2021-09-20 23:43:11.498 +06:00 [INF] no file to delete
+2021-09-20 23:43:11.498 +06:00 [INF] Worker running at: "2021-09-20T23:43:11.4987230+06:00"
+2021-09-20 23:43:31.505 +06:00 [INF] no file to delete
+2021-09-20 23:43:31.505 +06:00 [INF] Worker running at: "2021-09-20T23:43:31.5058389+06:00"
+2021-09-20 23:43:51.524 +06:00 [INF] no file to delete
+2021-09-20 23:43:51.526 +06:00 [INF] Worker running at: "2021-09-20T23:43:51.5262158+06:00"
+2021-09-20 23:44:11.532 +06:00 [INF] no file to delete
+2021-09-20 23:44:11.532 +06:00 [INF] Worker running at: "2021-09-20T23:44:11.5324410+06:00"
+2021-09-20 23:44:31.538 +06:00 [INF] no file to delete
+2021-09-20 23:44:31.538 +06:00 [INF] Worker running at: "2021-09-20T23:44:31.5387976+06:00"
+2021-09-20 23:44:51.548 +06:00 [INF] no file to delete
+2021-09-20 23:44:51.548 +06:00 [INF] Worker running at: "2021-09-20T23:44:51.5487605+06:00"
+2021-09-20 23:45:11.563 +06:00 [INF] no file to delete
+2021-09-20 23:45:11.563 +06:00 [INF] Worker running at: "2021-09-20T23:45:11.5632323+06:00"
+2021-09-20 23:45:31.579 +06:00 [INF] no file to delete
+2021-09-20 23:45:31.579 +06:00 [INF] Worker running at: "2021-09-20T23:45:31.5799436+06:00"
+2021-09-20 23:45:51.600 +06:00 [INF] no file to delete
+2021-09-20 23:45:51.600 +06:00 [INF] Worker running at: "2021-09-20T23:45:51.6000672+06:00"
+2021-09-20 23:46:11.615 +06:00 [INF] no file to delete
+2021-09-20 23:46:11.615 +06:00 [INF] Worker running at: "2021-09-20T23:46:11.6159844+06:00"
+2021-09-20 23:46:31.634 +06:00 [INF] no file to delete
+2021-09-20 23:46:31.634 +06:00 [INF] Worker running at: "2021-09-20T23:46:31.6341826+06:00"
+2021-09-20 23:46:51.642 +06:00 [INF] no file to delete
+2021-09-20 23:46:51.642 +06:00 [INF] Worker running at: "2021-09-20T23:46:51.6423626+06:00"
+2021-09-20 23:47:11.654 +06:00 [INF] no file to delete
+2021-09-20 23:47:11.654 +06:00 [INF] Worker running at: "2021-09-20T23:47:11.6548035+06:00"
+2021-09-20 23:47:31.696 +06:00 [INF] no file to delete
+2021-09-20 23:47:31.696 +06:00 [INF] Worker running at: "2021-09-20T23:47:31.6963424+06:00"
+2021-09-20 23:47:51.699 +06:00 [INF] no file to delete
+2021-09-20 23:47:51.700 +06:00 [INF] Worker running at: "2021-09-20T23:47:51.7005185+06:00"
+2021-09-20 23:48:11.712 +06:00 [INF] no file to delete
+2021-09-20 23:48:11.712 +06:00 [INF] Worker running at: "2021-09-20T23:48:11.7126442+06:00"
+2021-09-20 23:48:31.722 +06:00 [INF] no file to delete
+2021-09-20 23:48:31.722 +06:00 [INF] Worker running at: "2021-09-20T23:48:31.7225528+06:00"
+2021-09-20 23:48:51.734 +06:00 [INF] no file to delete
+2021-09-20 23:48:51.736 +06:00 [INF] Worker running at: "2021-09-20T23:48:51.7363194+06:00"
+2021-09-20 23:56:31.991 +06:00 [INF] Application Starting up
+2021-09-20 23:56:33.488 +06:00 [INF] no file to delete
+2021-09-20 23:56:33.490 +06:00 [INF] Worker running at: "2021-09-20T23:56:33.4895609+06:00"
+2021-09-20 23:56:53.504 +06:00 [INF] no file to delete
+2021-09-20 23:56:53.504 +06:00 [INF] Worker running at: "2021-09-20T23:56:53.5044646+06:00"
+2021-09-20 23:57:13.515 +06:00 [INF] no file to delete
+2021-09-20 23:57:13.515 +06:00 [INF] Worker running at: "2021-09-20T23:57:13.5156489+06:00"
+2021-09-20 23:57:33.752 +06:00 [INF] Deleted 
+2021-09-20 23:57:33.752 +06:00 [INF] Worker running at: "2021-09-20T23:57:33.7529072+06:00"
+2021-09-20 23:57:53.767 +06:00 [INF] no file to delete
+2021-09-20 23:57:53.767 +06:00 [INF] Worker running at: "2021-09-20T23:57:53.7678725+06:00"
+2021-09-20 23:58:13.770 +06:00 [INF] no file to delete
+2021-09-20 23:58:13.770 +06:00 [INF] Worker running at: "2021-09-20T23:58:13.7704974+06:00"
+2021-09-20 23:58:33.787 +06:00 [INF] no file to delete
+2021-09-20 23:58:33.787 +06:00 [INF] Worker running at: "2021-09-20T23:58:33.7876364+06:00"
+2021-09-20 23:58:53.798 +06:00 [INF] no file to delete
+2021-09-20 23:58:53.798 +06:00 [INF] Worker running at: "2021-09-20T23:58:53.7981501+06:00"
+2021-09-20 23:59:48.900 +06:00 [INF] no file to delete
+2021-09-20 23:59:48.900 +06:00 [INF] Worker running at: "2021-09-20T23:59:48.9004310+06:00"
+2021-09-20 23:59:54.886 +06:00 [INF] Application Starting up
+2021-09-20 23:59:56.431 +06:00 [INF] no file to delete
+2021-09-20 23:59:56.434 +06:00 [INF] Worker running at: "2021-09-20T23:59:56.4339326+06:00"

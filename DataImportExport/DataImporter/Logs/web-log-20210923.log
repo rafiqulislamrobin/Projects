@@ -1,0 +1,197 @@
+2021-09-23 00:03:14.319 +06:00 [INF] Application Starting up
+2021-09-23 00:04:17.332 +06:00 [INF] User logged in.
+2021-09-23 00:05:35.262 +06:00 [INF] Application Starting up
+2021-09-23 00:06:13.763 +06:00 [INF] User logged in.
+2021-09-23 00:06:13.778 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'RestrictedArea' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-23 00:06:35.769 +06:00 [INF] Application Starting up
+2021-09-23 00:07:32.522 +06:00 [INF] Application Starting up
+2021-09-23 00:08:07.035 +06:00 [INF] User logged in.
+2021-09-23 00:09:24.765 +06:00 [INF] Application Starting up
+2021-09-23 00:09:40.467 +06:00 [INF] User logged in.
+2021-09-23 00:10:09.131 +06:00 [INF] Application Starting up
+2021-09-23 00:10:47.866 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:74.125.24.109]:587
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at DataImporter.Services.EmailSender.SendEmailAsync(String email, String subject, String htmlMessage) in D:\#FinalProject\3\DataImporter\Services\EmailService.cs:line 37
+   at DataImporter.Controllers.AccountController.Register(RegisterModel model) in D:\#FinalProject\3\DataImporter\Controllers\AccountController.cs:line 94
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-23 00:11:36.461 +06:00 [INF] Application Starting up
+2021-09-23 00:12:10.606 +06:00 [INF] User logged in.
+2021-09-23 00:12:58.056 +06:00 [INF] Application Starting up
+2021-09-23 00:13:35.483 +06:00 [INF] User logged in.
+2021-09-23 00:14:42.500 +06:00 [INF] Application Starting up
+2021-09-23 00:15:18.407 +06:00 [INF] User logged in.
+2021-09-23 00:16:10.313 +06:00 [INF] Application Starting up
+2021-09-23 00:16:49.979 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 00:16:50.018 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 00:17:01.944 +06:00 [INF] User logged in.
+2021-09-23 00:17:35.605 +06:00 [INF] Application Starting up
+2021-09-23 00:17:53.016 +06:00 [INF] Application Starting up
+2021-09-23 00:18:13.896 +06:00 [INF] User logged in.
+2021-09-23 00:19:13.918 +06:00 [INF] Application Starting up
+2021-09-23 00:19:21.333 +06:00 [INF] User logged in.
+2021-09-23 00:21:28.567 +06:00 [INF] Application Starting up
+2021-09-23 11:36:38.141 +06:00 [INF] Application Starting up
+2021-09-23 11:43:35.245 +06:00 [INF] Application Starting up
+2021-09-23 11:44:26.809 +06:00 [INF] User logged in.
+2021-09-23 11:44:39.061 +06:00 [ERR] Add Group Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Groups_AspNetUsers_ApplicationUserId". The conflict occurred in database "DataImporter", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:01124127-d24e-49b7-b809-8d648c1f312f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at DataImporter.Data.UnitOfWork.Save() in D:\#FinalProject\3\DataImporter.Data\UnitOfWork.cs:line 28
+   at DataImporter.Info.Services.DataImporterService.CreateGroup(Group group) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 111
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 39
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 62
+2021-09-23 12:05:17.874 +06:00 [INF] Application Starting up
+2021-09-23 12:05:48.608 +06:00 [INF] User logged in.
+2021-09-23 12:07:48.395 +06:00 [INF] Application Starting up
+2021-09-23 12:11:54.110 +06:00 [INF] Application Starting up
+2021-09-23 12:14:40.758 +06:00 [INF] Application Starting up
+2021-09-23 12:24:29.491 +06:00 [INF] Application Starting up
+2021-09-23 12:25:00.914 +06:00 [INF] Application Starting up
+2021-09-23 12:26:43.045 +06:00 [INF] User logged in.
+2021-09-23 12:28:25.775 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'AccessPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-23 12:28:45.523 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'AccessPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-23 12:29:28.393 +06:00 [INF] Application Starting up
+2021-09-23 12:29:41.488 +06:00 [INF] User logged in.
+2021-09-23 12:29:53.906 +06:00 [INF] User logged out.
+2021-09-23 12:29:59.154 +06:00 [INF] User logged in.
+2021-09-23 12:34:00.696 +06:00 [INF] Application Starting up
+2021-09-23 12:34:11.851 +06:00 [INF] User logged in.
+2021-09-23 12:59:15.901 +06:00 [INF] Application Starting up
+2021-09-23 12:59:31.255 +06:00 [INF] User logged in.
+2021-09-23 13:00:50.620 +06:00 [INF] Application Starting up
+2021-09-23 13:01:00.169 +06:00 [INF] User logged in.
+2021-09-23 13:31:38.298 +06:00 [INF] Application Starting up
+2021-09-23 13:32:01.736 +06:00 [INF] User logged in.
+2021-09-23 13:32:10.068 +06:00 [INF] User logged out.
+2021-09-23 13:32:14.410 +06:00 [INF] User logged in.
+2021-09-23 13:44:39.519 +06:00 [INF] Application Starting up
+2021-09-23 13:44:53.911 +06:00 [INF] User logged in.
+2021-09-23 13:45:08.109 +06:00 [INF] User logged out.
+2021-09-23 13:45:12.649 +06:00 [INF] User logged in.
+2021-09-23 13:45:29.782 +06:00 [INF] User logged out.
+2021-09-23 14:44:57.142 +06:00 [INF] Application Starting up
+2021-09-23 14:45:13.261 +06:00 [INF] User logged in.
+2021-09-23 22:59:14.022 +06:00 [INF] Application Starting up
+2021-09-23 22:59:24.816 +06:00 [INF] User logged in.
+2021-09-23 22:59:51.074 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.DataImporterService.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 100
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 46
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 62
+2021-09-23 23:00:05.899 +06:00 [INF] User logged out.
+2021-09-23 23:00:18.959 +06:00 [WRN] Invalid password for user.
+2021-09-23 23:00:18.959 +06:00 [WRN] User failed to provide the correct password.
+2021-09-23 23:00:29.001 +06:00 [WRN] Invalid password for user.
+2021-09-23 23:00:29.001 +06:00 [WRN] User failed to provide the correct password.
+2021-09-23 23:00:36.860 +06:00 [INF] User logged in.
+2021-09-23 23:00:44.535 +06:00 [ERR] Add Group Failed
+DataImporter.Info.Exceptions.DuplicateException: Group name is already used
+   at DataImporter.Info.Services.DataImporterService.CreateGroup(Group group, Guid id) in D:\#FinalProject\3\DataImporter.Info\Services\DataImporterService.cs:line 100
+   at DataImporter.Areas.User.Models.CreateGroupModel.CreateGroup() in D:\#FinalProject\3\DataImporter\Areas\User\Models\CreateGroupModel.cs:line 46
+   at DataImporter.Areas.User.Controllers.DataImporterController.CreateGroups(CreateGroupModel model) in D:\#FinalProject\3\DataImporter\Areas\User\Controllers\DataImporterController.cs:line 62
+2021-09-23 23:11:00.950 +06:00 [INF] Application Starting up
+2021-09-23 23:13:21.848 +06:00 [INF] Application Starting up
+2021-09-23 23:14:57.230 +06:00 [INF] Application Starting up
+2021-09-23 23:16:16.442 +06:00 [INF] Application Starting up
+2021-09-23 23:16:27.423 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:16:27.462 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:18:08.119 +06:00 [INF] Application Starting up
+2021-09-23 23:21:43.894 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:21:43.933 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:22:04.919 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:23:44.298 +06:00 [INF] Application Starting up
+2021-09-23 23:26:45.035 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:30:13.702 +06:00 [INF] Application Starting up
+2021-09-23 23:30:35.985 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:31:50.628 +06:00 [INF] Application Starting up
+2021-09-23 23:32:16.170 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:32:16.209 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:32:32.674 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:32:32.676 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:32:47.214 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:32:51.130 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:37:53.265 +06:00 [INF] Application Starting up
+2021-09-23 23:38:16.009 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:38:16.052 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:39:01.260 +06:00 [INF] Application Starting up
+2021-09-23 23:39:23.957 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:39:23.999 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:39:48.676 +06:00 [INF] Application Starting up
+2021-09-23 23:40:07.178 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-23 23:40:48.506 +06:00 [WRN] User validation failed: DuplicateUserName.

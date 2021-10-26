@@ -1,0 +1,114 @@
+﻿@model ExportHistoryModel
+@{
+    ViewData["Title"] = "ExportFileHistory";
+}
+@section Styles
+{
+    <link rel="stylesheet" href="/user/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/user/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/user/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+
+    <script>
+        $(function () {
+
+            $('#History').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/DataImporter/GetExporttHistoryData",
+
+                "columnDefs": [
+                    {
+                        "orderable": false,
+                        "targets": 2,
+                        "render": function (data, type, row) {
+                            return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href='/DataImporter/DownloadFromExportHistory/${data}'" value='${data}'>
+                                                <i class="fas fa-download"></i>
+                                                </i>
+                                                Download
+                                            </button>`;
+                        }
+                    }
+                ]
+
+            });
+        });
+    </script>
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6" style="color:black">
+                <h1>Exports File History</h1>
+            </div>
+        </div>
+    </div>
+    <form method="get" asp-controller="DataImporter" asp-action="Importdate" asp-antiforgery="true">
+
+
+        <div class="card w-75" style="background-image: -webkit-linear-gradient(-135deg, #abbaab,#ffffff); margin-bottom: 0">
+            <div class="card-body">
+                <div style="display: flex;justify-content:center;">
+                    <div class="mt-4" style="display: flex; ">
+
+                        <div class="form-group" style="color:black">
+                            <label asp-for="DateFrom" style="margin-left:-20px">Date From </label>
+                            <input asp-for="DateFrom" class="form-control" id="datefrom"
+                                   type="date" style="margin-left:-20px" />
+                        </div>
+                        <div class="form-group" style="color:black">
+                            <label asp-for="DateTo" style="margin-left:-10px">Date To</label>
+                            <input asp-for="DateTo" class="form-control" id="dateTo"
+                                   type="date" style="margin-left:-10px" />
+                        </div>
+
+
+                        <div>
+
+                            <button type="submit" asp-action="ExportFileHistory" class="btn btn-primary "
+                                    style="color: black;background-color: white;
+                             border-radius:15px; border-color:#9c94d6; margin-top:30px; ">
+                                search
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header" style="color: black;background-color: #9c94d6">
+                        <h3 class="card-title">List</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <table id="History" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Group Name</th>
+                                    <th>Email </th>
+                                    <th>Download </th>
+                                    <th>Exports Date</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <partial name="_deletePartial" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

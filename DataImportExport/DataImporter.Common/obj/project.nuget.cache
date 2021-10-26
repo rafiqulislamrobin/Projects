@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CSS49iD/9Sq6ojteTVASXCgL+2Q0+3VCw8lW+YMVaFuND3vW/fgmanykoOLCGkP+A/fXBlP46nesTZqJog79KQ==",
+  "success": true,
+  "projectFilePath": "D:\\Zgarabage\\3\\DataImporter.Common\\DataImporter.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\krato\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\krato\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\krato\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\krato\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
