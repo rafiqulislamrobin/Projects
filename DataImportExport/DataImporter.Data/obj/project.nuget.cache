@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ABpHb8NaNcYXAVhpIfPMogXAtOC0df1oCMGeQT+ugHHd3uc0k0GblINCL6e2mVDliCZLN3umfWLGyjNEONRQyg==",
+  "dgSpecHash": "Ru8oXHfW05V+CABl+KttLI6ytBkXidSZgmX29iX4YAm+TljoOze+vkGJTA6xMzUfwNAfQ5ro8/N9VumsNr7QhQ==",
   "success": true,
-  "projectFilePath": "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj",
+  "projectFilePath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krato\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\krato\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

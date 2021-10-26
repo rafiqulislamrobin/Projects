@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj": {}
+    "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj": {}
   },
   "projects": {
-    "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj": {
+    "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj",
+        "projectUniqueName": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj",
         "projectName": "DataImporter.Data",
-        "projectPath": "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj",
+        "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj",
         "packagesPath": "C:\\Users\\krato\\.nuget\\packages\\",
-        "outputPath": "D:\\Zgarabage\\3\\DataImporter.Data\\obj\\",
+        "outputPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krato\\AppData\\Roaming\\NuGet\\NuGet.Config",

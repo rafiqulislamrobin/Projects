@@ -18,18 +18,7 @@
         $(function () {
             $('#selectTwo').chosen();
         });
-        $(function () {
 
-            $('#Contact').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "autoWidth": false,
-                "responsive": true
-
-            });
-        });
     </script>
 
     <script src="~/js/chosen.jquery.min.js"></script>
@@ -54,16 +43,15 @@
                new { required = "required", id = "selectTwo", multiple = "multiple" })
 
 
-            </div>
-            <!-- /.card-body -->
-            <input type="hidden" asp-for="GroupId" value="@Model.GroupIds " id="groupid" />
-            <div class="card-footer">
+
+                <!-- /.card-body -->
+                <input type="hidden" asp-for="GroupId" value="@Model.GroupIds " id="groupid" />
+
                 <button type="submit" class="btn btn-primary"
-                        style="color: black;background-color: #9c94d6;border-color:#9c94d6">
+                        style="color: black;background-color: white;border-color:grey;margin-left:5px">
                     Download
                 </button>
             </div>
-
         </div>
 
     </form>

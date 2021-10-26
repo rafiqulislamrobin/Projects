@@ -135,11 +135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Zgarabage\\3\\DataImporter.Common\\DataImporter.Common.csproj",
+      "projectUniqueName": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Common\\DataImporter.Common.csproj",
       "projectName": "DataImporter.Common",
-      "projectPath": "D:\\Zgarabage\\3\\DataImporter.Common\\DataImporter.Common.csproj",
+      "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Common\\DataImporter.Common.csproj",
       "packagesPath": "C:\\Users\\krato\\.nuget\\packages\\",
-      "outputPath": "D:\\Zgarabage\\3\\DataImporter.Common\\obj\\",
+      "outputPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krato\\AppData\\Roaming\\NuGet\\NuGet.Config",

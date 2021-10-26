@@ -7710,11 +7710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Zgarabage\\3\\DataImporter.ImportWorker\\DataImporter.ImportWorker.csproj",
+      "projectUniqueName": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.ImportWorker\\DataImporter.ImportWorker.csproj",
       "projectName": "DataImporter.ImportWorker",
-      "projectPath": "D:\\Zgarabage\\3\\DataImporter.ImportWorker\\DataImporter.ImportWorker.csproj",
+      "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.ImportWorker\\DataImporter.ImportWorker.csproj",
       "packagesPath": "C:\\Users\\krato\\.nuget\\packages\\",
-      "outputPath": "D:\\Zgarabage\\3\\DataImporter.ImportWorker\\obj\\",
+      "outputPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.ImportWorker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krato\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7731,8 +7731,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Zgarabage\\3\\DataImporter.Info\\DataImporter.Info.csproj": {
-              "projectPath": "D:\\Zgarabage\\3\\DataImporter.Info\\DataImporter.Info.csproj"
+            "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Info\\DataImporter.Info.csproj": {
+              "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Info\\DataImporter.Info.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GBA+1tZiCOpmmGj6pjn1Wrsege5GFE99Gtn6XiHnJNkyt/hZLKqSoqPlIUOUHA+XKMRCb7xUnU7hCw1MHPiZjw==",
+  "dgSpecHash": "nTaKurp4+3fuSZrI/bmZoJ9LxSWXZe+inYUE6eQOf/LPWTyXxiV6ZKKK2y6OZkwrrJjhJ0OhfO8Sm/mimnOHFw==",
   "success": true,
-  "projectFilePath": "D:\\Zgarabage\\3\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
+  "projectFilePath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krato\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\krato\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

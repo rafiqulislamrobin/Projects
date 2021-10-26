@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L0UUTQG2zmD3+AFtwv5jcSmrYSldu496crYeygXjGiYZiRQZAWDawVAN2Vr4LeRgHv7YE8TPZxIeWIrhTsRTzA==",
+  "dgSpecHash": "aWeLD9MA9BBPNMJpXts175jmiVgg4uGYs6svfZnOOJXPmJOHpLVVpRWyFIzY0+fMyq7UjGFkUUZvwlF7SMZohA==",
   "success": true,
-  "projectFilePath": "D:\\Zgarabage\\3\\DataImporter.Tests\\DataImporter.Tests.csproj",
+  "projectFilePath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Tests\\DataImporter.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krato\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\krato\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",

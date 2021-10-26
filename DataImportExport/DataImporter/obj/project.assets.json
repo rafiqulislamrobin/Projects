@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Zgarabage\\3\\DataImporter\\DataImporter.csproj",
+      "projectUniqueName": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter\\DataImporter.csproj",
       "projectName": "DataImporter",
-      "projectPath": "D:\\Zgarabage\\3\\DataImporter\\DataImporter.csproj",
+      "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter\\DataImporter.csproj",
       "packagesPath": "C:\\Users\\krato\\.nuget\\packages\\",
-      "outputPath": "D:\\Zgarabage\\3\\DataImporter\\obj\\",
+      "outputPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krato\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11527,17 +11527,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Zgarabage\\3\\DataImporter.Common\\DataImporter.Common.csproj": {
-              "projectPath": "D:\\Zgarabage\\3\\DataImporter.Common\\DataImporter.Common.csproj"
+            "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Common\\DataImporter.Common.csproj": {
+              "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Common\\DataImporter.Common.csproj"
             },
-            "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj": {
-              "projectPath": "D:\\Zgarabage\\3\\DataImporter.Data\\DataImporter.Data.csproj"
+            "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj": {
+              "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Data\\DataImporter.Data.csproj"
             },
-            "D:\\Zgarabage\\3\\DataImporter.Info\\DataImporter.Info.csproj": {
-              "projectPath": "D:\\Zgarabage\\3\\DataImporter.Info\\DataImporter.Info.csproj"
+            "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Info\\DataImporter.Info.csproj": {
+              "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.Info\\DataImporter.Info.csproj"
             },
-            "D:\\Zgarabage\\3\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj": {
-              "projectPath": "D:\\Zgarabage\\3\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj"
+            "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj": {
+              "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj"
             }
           }
         }

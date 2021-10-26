@@ -6082,11 +6082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Zgarabage\\3\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
+      "projectUniqueName": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
       "projectName": "DataImporter.MemberShip",
-      "projectPath": "D:\\Zgarabage\\3\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
+      "projectPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\DataImporter.MemberShip.csproj",
       "packagesPath": "C:\\Users\\krato\\.nuget\\packages\\",
-      "outputPath": "D:\\Zgarabage\\3\\DataImporter.MemberShip\\obj\\",
+      "outputPath": "D:\\new project\\GIT\\Projects\\DataImportExport\\DataImporter.MemberShip\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krato\\AppData\\Roaming\\NuGet\\NuGet.Config",
