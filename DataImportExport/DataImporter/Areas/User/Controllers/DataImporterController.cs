@@ -323,7 +323,7 @@ namespace DataImporter.Areas.User.Controllers
 
             var model = _scope.Resolve<ExportFileModel>();
             model.GetContactsList(id);
-            var contacts = model.GetExportFiles();
+            var contacts = model.GetExportFile();
             string fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             string fileFormat = "User.xlsx";
             return File(contacts, fileType, fileFormat);
@@ -334,7 +334,7 @@ namespace DataImporter.Areas.User.Controllers
             var model = _scope.Resolve<ExportFileModel>();
             model.GetExportFileHistory(id);
             model.GetContactsListByDate(model.GroupId) ;
-            var contacts = model.GetExportFiles();
+            var contacts = model.GetExportFile();
             string fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             string fileFormat = "User.xlsx";
             return File(contacts, fileType, fileFormat);

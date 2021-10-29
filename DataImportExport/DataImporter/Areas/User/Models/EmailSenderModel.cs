@@ -24,7 +24,8 @@ namespace DataImporter.Areas.User.Models
         public int GroupId { get; set; }
         public string FileName { get; set; }
         public List<string> Headers { get; set; }
-        public List<List<string>> Items { get; set; }
+        public List<string> Itemss { get; set; }
+        //public List<List<string>> Items { get; set; }
         private IDataImporterService _iDataImporterService;
         private ILogger<EmailSenderModel> _logger;
         private ILifetimeScope _scope;
@@ -98,7 +99,7 @@ namespace DataImporter.Areas.User.Models
            
             var contacts = _iDataImporterService.ContactList(groupId);
             Headers = contacts.Item1;
-            Items = contacts.Item2;
+            Itemss = contacts.Item2;
             GetExportFiles();
         }
         internal MemoryStream GetExportFiles()
@@ -123,15 +124,20 @@ namespace DataImporter.Areas.User.Models
                 }
 
                 //putting item in a rows
-                for (int row = 0; row < Items.Count; row++)
+                int col = 0, row = 0, head = 0, z = 0;
+
+                for (; col < Itemss.Count; col++, head++, z++)
                 {
-                    List<string> values = new();
-                    for (int col = 0; col < Headers.Count; col++)
+                    if (head == Headers.Count)
                     {
-                        worksheet.Cells[row + 2, col + 1].Value = Items[row][col];
+                        z = 0;
+                        head = 0;
+                        row++;
                     }
+                    worksheet.Cells[row + 2, z + 1].Value = Itemss[col];
+
                 }
-                 excelPackage.Workbook.Properties.Title = "User list";
+                excelPackage.Workbook.Properties.Title = "User list";
                  excelPackage.Workbook.Properties.Author = "Robin";
 
                  FileName = Guid.NewGuid().ToString();

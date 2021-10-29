@@ -102,17 +102,24 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <tr>
+                                                    @{int x = 0; }
+                                                    @foreach (var j in Model.Itemss)
+                                                    {
 
-                                                @foreach (var item in Model.Items)
-                                                {
-                                                    <tr>
-                                                        @foreach (var i in item)
+                                                        <td>
+                                                            @j
+                                                        </td>
+
+                                                        x++;
+                                                        @if (x == Model.Headers.Count)
                                                         {
-                                                            <td>@i</td>
-                                                        }
-                                                    </tr>
-                                                }
-                                            </tbody>
+<tr>
+                                                        </tr>
+                                                        x = 0;
+                                                    }
+                                                    }
+                                                </tbody>
 
                                         </table>
 

@@ -21,16 +21,16 @@ namespace DataImporter.Info.Services
             _DatetimeUtility = DatetimeUtility;
         }
 
-        public (List<string>, List<List<string>>) ContactList(int groupId)
+        public (List<string>, List<string>) ContactList(int groupId)
         {
             //var group = _dataUnitOfWork.Group.GetById(groupId);
 
             List<string> headers = new();
-            List<string> items = new();
-            List<List<string>> itemsRow = new();
+            //List<string> items = new();
+            List<string> itemsRow = new();
 
             var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId);
-            var h = 0;
+           
             foreach (var contactRow in contactEntities)
             {
                 if (headers.Contains(contactRow.Key))
@@ -43,27 +43,18 @@ namespace DataImporter.Info.Services
                 }
 
             }
-            foreach (var contactRow in contactEntities)
-            {
-                items.Add(contactRow.Value);
-                h++;
-                if (h == headers.Count)
-                {
-                    itemsRow.Add(items);
-                    items = new List<string>();
-                    h = 0;
-                }
-            }
+            itemsRow = (from contacts in contactEntities
+                        select contacts.Value).ToList();
 
             return (headers, itemsRow);
         }
-        public (List<string>, List<List<string>>) ContactListByExportDate(int groupId, DateTime dateTime)
+        public (List<string>, List<string>) ContactListByExportDate(int groupId, DateTime dateTime)
         {
             //var group = _dataUnitOfWork.Group.GetById(groupId);
 
             List<string> headers = new();
-            List<string> items = new();
-            List<List<string>> itemsRow = new();
+           
+            List<string> itemsRow = new();
 
             var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId && x.ContactDate <= dateTime);
             var h = 0;
@@ -78,17 +69,8 @@ namespace DataImporter.Info.Services
                     headers.Add(contactRow.Key);
                 }
             }
-            foreach (var contactRow in contactEntities)
-            {
-                items.Add(contactRow.Value);
-                h++;
-                if (h == headers.Count)
-                {
-                    itemsRow.Add(items);
-                    items = new List<string>();
-                    h = 0;
-                }
-            }
+            itemsRow = (from contacts in contactEntities
+                        select contacts.Value).ToList();
 
             return (headers, itemsRow);
         }
@@ -96,21 +78,26 @@ namespace DataImporter.Info.Services
 
 
 
-        public (List<string>, List<List<string>>) ContactListByDate(int groupId,
+        public (List<string>, List<string>) ContactListByDate(int groupId,
                 DateTime DateFrom, DateTime DateTo)
         {
 
             List<string> headers = new();
             List<string> items = new();
-            List<List<string>> itemsRow = new();
+            //List<List<string>> itemsRow = new();
+            List<string> itemsRow = new();
 
             if (DateTo != DateTime.MinValue && DateFrom != DateTime.MinValue)
             {
-                var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId );
+                var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId);
                 var contactsByDate = from contacts in contactEntities
                                      where contacts.ContactDate <= DateTo && contacts.ContactDate >= DateFrom
                                      select contacts;
-                var h = 0;
+                var j = from contacts in contactEntities
+                        where contacts.ContactDate <= DateTo && contacts.ContactDate >= DateFrom
+                        select contacts.Key;
+
+        
                 foreach (var contactRow in contactsByDate)
                 {
                     if (headers.Contains(contactRow.Key))
@@ -122,22 +109,25 @@ namespace DataImporter.Info.Services
                         headers.Add(contactRow.Key);
                     }
                 }
-                foreach (var contactRow in contactsByDate)
-                {
-                    items.Add(contactRow.Value);
-                    h++;
-                    if (h == headers.Count)
-                    {
-                        itemsRow.Add(items);
-                        items = new List<string>();
-                        h = 0;
-                    }
-                }
+                //foreach (var contactRow in contactsByDate)
+                //{
+                //    items.Add(contactRow.Value);
+                //    h++;
+                //    if (h == headers.Count)
+                //    {
+                //        itemsRow.Add(items);
+                //        items = new List<string>();
+                //        h = 0;
+                //    }
+                //}
             }
             else
             {
                 var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId );
-                var h = 0;
+
+                itemsRow = (from contacts in contactEntities
+                        select contacts.Value).ToList();
+                
                 foreach (var contactRow in contactEntities)
                 {
                     if (headers.Contains(contactRow.Key))
@@ -149,19 +139,19 @@ namespace DataImporter.Info.Services
                         headers.Add(contactRow.Key);
                     }
                 }
-                foreach (var contactRow in contactEntities)
-                {
-                    items.Add(contactRow.Value);
-                    h++;
-                    if (h == headers.Count)
-                    {
-                        itemsRow.Add(items);
-                        items = new List<string>();
-                        h = 0;
-                    }
-                }
+                //foreach (var contactRow in contactEntities)
+                //{
+                //    items.Add(contactRow.Value);
+                //    h++;
+                //    if (h == headers.Count)
+                //    {
+                //        itemsRow.Add(items);
+                //        items = new List<string>();
+                //        h = 0;
+                //    }
+                //}
             }
-
+        
             return (headers, itemsRow);
         }
 

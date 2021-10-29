@@ -1,4 +1,5 @@
-﻿@model ExportFileModel
+﻿
+@model ExportFileModel
 @{
     ViewData["Title"] = "ViewContacts";
 }
@@ -115,20 +116,29 @@
                                                     }
                                                 </tr>
                                             </thead>
+
                                             <tbody>
+                                                @{int x = 0; }
+                                                <tr>
+                                                    @foreach (var j in Model.Itemss)
+                                                    {
 
-                                                @foreach (var item in Model.Items)
-                                                {
-                                                    <tr>
-                                                        @foreach (var i in item)
+                                                        <td>
+                                                            @j
+                                                        </td>
+
+                                                        x++;
+                                                        @if (x == Model.Headers.Count)
                                                         {
-                                                            <td>@i</td>
+                                                        <tr>
+                                                        </tr>
+                                                        x = 0;
                                                         }
-                                                    </tr>
-                                                }
-                                            </tbody>
-
-                                        </table>
+                                                    }
+                                                 </tr>
+                                                </tbody>
+                                                
+                                            </table>
 
                                         <partial name="_deletePartial" />
                                     </div>

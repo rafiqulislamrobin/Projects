@@ -36,3 +36,22 @@ D:\#FinalProject\2\DataImporter.Info\bin\Debug\net5.0\DataImporter.Common.dll
 D:\#FinalProject\2\DataImporter.Info\bin\Debug\net5.0\DataImporter.MemberShip.dll
 D:\#FinalProject\2\DataImporter.Info\bin\Debug\net5.0\DataImporter.Common.pdb
 D:\#FinalProject\2\DataImporter.Info\bin\Debug\net5.0\DataImporter.MemberShip.pdb
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Info.deps.json
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Info.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\ref\DataImporter.Info.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Info.pdb
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Common.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Data.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.MemberShip.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Common.pdb
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\bin\Debug\net5.0\DataImporter.MemberShip.pdb
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.csprojAssemblyReference.cache
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.GeneratedMSBuildEditorConfig.editorconfig
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.AssemblyInfoInputs.cache
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.AssemblyInfo.cs
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.csproj.CoreCompileInputs.cache
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.csproj.CopyComplete
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\ref\DataImporter.Info.dll
+D:\new project\GIT\Projects\DataImportExport\DataImporter.Info\obj\Debug\net5.0\DataImporter.Info.pdb

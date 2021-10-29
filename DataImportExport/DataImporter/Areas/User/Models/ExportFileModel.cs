@@ -26,7 +26,8 @@ namespace DataImporter.Areas.User.Models
         public DateTime ExportDate{ get; set; }
         public DateTime DateFrom { get; set; }
         public DateTime DateTo { get; set; }
-        public List<string> Headers { get; set; }      
+        public List<string> Headers { get; set; }
+        public List<string> Itemss { get; set; }
         public List<List<string>> Items { get; set; }
 
       
@@ -59,7 +60,7 @@ namespace DataImporter.Areas.User.Models
             {
                 var contacts = _iDataImporterService.ContactListByDate(groupId, DateFrom, DateTo);
                 Headers = contacts.Item1;
-                Items = contacts.Item2;
+                Itemss = contacts.Item2;
                 GroupId = groupId;
             }
          
@@ -70,7 +71,7 @@ namespace DataImporter.Areas.User.Models
             {
                 var contacts = _iDataImporterService.ContactListByDate(groupId, datefrom, dateto);
                 Headers = contacts.Item1;
-                Items = contacts.Item2;
+                Itemss = contacts.Item2;
                 GroupId = groupId;
             }
 
@@ -80,11 +81,11 @@ namespace DataImporter.Areas.User.Models
           
                 var contacts = _iDataImporterService.ContactListByExportDate(groupId , ExportDate);
                 Headers = contacts.Item1;
-                Items = contacts.Item2;
+                Itemss = contacts.Item2;
                 GroupId = groupId;
             
         }
-        internal MemoryStream GetExportFiles()
+        internal MemoryStream GetExportFile()
         {
 
             //start exporting to excel
@@ -105,14 +106,18 @@ namespace DataImporter.Areas.User.Models
                 }
 
                 //filling information
-                
-                for (int row = 0; row < Items.Count ; row++)
+                 int col = 0,row = 0,head = 0,z = 0;
+              
+                for (; col < Itemss.Count; col++,head++,z++)
                 {
-                    List<string> values = new();
-                    for (int col = 0; col < Headers.Count; col++)
+                    if (head == Headers.Count)
                     {
-                        worksheet.Cells[row+2, col+1].Value =Items[row][col];
+                        z = 0;
+                        head = 0;
+                        row++;
                     }
+                    worksheet.Cells[row + 2, z + 1].Value = Itemss[col];
+                   
                 }
                 excelPackage.Workbook.Properties.Title = "User list";
                 excelPackage.Workbook.Properties.Author = "Robin";
@@ -123,7 +128,12 @@ namespace DataImporter.Areas.User.Models
             return(stream);
         }
 
-
+        internal void GetExportFileHistory(int id)
+        {
+            var items = _exportServices.GetExportHistoryForDownload(id);
+            GroupId = items.Item1;
+            ExportDate = items.Item2;
+        }
         internal MemoryStream GetExportMultipleFiles(List<int> id)
         {
 
@@ -139,10 +149,10 @@ namespace DataImporter.Areas.User.Models
                     Headers = new();
                     Items = new();
                     Headers = contacts.Item1;
-                    Items = contacts.Item2;
+                    Itemss = contacts.Item2;
                     GroupId = groupid;
                    var group = _groupServices.LoadGroup(groupid);
-                    var worksheet = excelPackage.Workbook.Worksheets.Add($"{group.Name}");
+                   var worksheet = excelPackage.Workbook.Worksheets.Add($"{group.Name}");
 
                     for (int i = 1; i <= Headers.Count; i++)
                     {
@@ -154,15 +164,20 @@ namespace DataImporter.Areas.User.Models
                     }
 
                     //filling information
+                    int col = 0, row = 0, head = 0, z = 0;
 
-                    for (int row = 0; row < Items.Count; row++)
+                    for (; col < Itemss.Count; col++, head++, z++)
                     {
-                        List<string> values = new();
-                        for (int col = 0; col < Headers.Count; col++)
+                        if (head == Headers.Count)
                         {
-                            worksheet.Cells[row + 2, col + 1].Value = Items[row][col];
+                            z = 0;
+                            head = 0;
+                            row++;
                         }
+                        worksheet.Cells[row + 2, z + 1].Value = Itemss[col];
+
                     }
+
                     excelPackage.Workbook.Properties.Title = "User list";
                     excelPackage.Workbook.Properties.Author = "Robin";
                    
@@ -183,12 +198,7 @@ namespace DataImporter.Areas.User.Models
             return _groupServices.LoadAllGroups(id);
         }
 
-        internal void GetExportFileHistory(int id)
-        {
-            var items = _exportServices.GetExportHistoryForDownload(id);
-            GroupId = items.Item1;
-            ExportDate = items.Item2;
-        }
+      
     }
 }
 
