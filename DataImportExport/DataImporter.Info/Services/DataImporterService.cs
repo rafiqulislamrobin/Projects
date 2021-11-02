@@ -342,8 +342,7 @@ namespace DataImporter.Info.Services
 
                         return ex.Message;
                     }
-                    return "Deleted ";
-
+                    break;
                 }
             }
             return "no file to delete";
