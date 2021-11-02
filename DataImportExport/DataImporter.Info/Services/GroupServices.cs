@@ -122,5 +122,22 @@ namespace DataImporter.Info.Services
         private bool IsNameAlreadyUsed(string name, Guid id) =>
           _dataUnitOfWork.Group.GetCount(g => g.Name == name && g.ApplicationUserId == id) > 0;
 
+        public List<Group> LoadGroupsWithContact(Guid id)
+        {
+            if (id == Guid.Empty)
+            {
+                return null;
+            }
+            var groupEntities = _dataUnitOfWork.Group.Get(g => g.ApplicationUserId == id && g.Contacts.Count > 0, "Contacts");
+
+            var result = (from g in groupEntities
+                          
+                          select new Group
+                          {
+                              Id = g.Id,
+                              Name = g.Name
+                          }).ToList();
+            return result;
+        }
     }
 }

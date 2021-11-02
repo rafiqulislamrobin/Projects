@@ -137,22 +137,23 @@ namespace DataImporter.Areas.User.Models
         internal MemoryStream GetExportMultipleFiles(List<int> id)
         {
 
+
             //start exporting to excel
             var stream = new MemoryStream();
             using (var excelPackage = new ExcelPackage(stream))
             {
                 foreach (var groupid in id)
                 {
-             
-               
+
+
                     var contacts = _iDataImporterService.ContactList(groupid);
                     Headers = new();
                     Items = new();
                     Headers = contacts.Item1;
                     Itemss = contacts.Item2;
                     GroupId = groupid;
-                   var group = _groupServices.LoadGroup(groupid);
-                   var worksheet = excelPackage.Workbook.Worksheets.Add($"{group.Name}");
+                    var group = _groupServices.LoadGroup(groupid);
+                    var worksheet = excelPackage.Workbook.Worksheets.Add($"{group.Name}");
 
                     for (int i = 1; i <= Headers.Count; i++)
                     {
@@ -180,23 +181,24 @@ namespace DataImporter.Areas.User.Models
 
                     excelPackage.Workbook.Properties.Title = "User list";
                     excelPackage.Workbook.Properties.Author = "Robin";
-                   
-                  
+
+
                 }
                 //define a worksheet
 
                 excelPackage.Save();
             }
-          
+
             return (stream);
         }
 
 
-        internal List<Group> LoadAllGroups()
+        internal List<Group> LoadGroupsWithContactAvailable()
         {
             var id = Guid.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
-            return _groupServices.LoadAllGroups(id);
+            return _groupServices.LoadGroupsWithContact(id);
         }
+
 
       
     }

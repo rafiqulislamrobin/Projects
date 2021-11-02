@@ -57,7 +57,7 @@ namespace DataImporter.Info.Services
             List<string> itemsRow = new();
 
             var contactEntities = _dataUnitOfWork.Contact.GetAll().Where(x => x.GroupId == groupId && x.ContactDate <= dateTime);
-            var h = 0;
+            
             foreach (var contactRow in contactEntities)
             {
                 if (headers.Contains(contactRow.Key))

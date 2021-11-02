@@ -16,6 +16,7 @@ namespace DataImporter.Info.Services
         void UpdateGroup(Group group, Guid id);
 
         List<Group> LoadAllGroups(Guid id);
+        List<Group> LoadGroupsWithContact(Guid id);
         (IList<Group> records, int total, int totalDisplay) GetGroupsList(int pageIndex, int pageSize,
                                                  string searchText, Guid id, string sortText);
     }

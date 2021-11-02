@@ -246,7 +246,7 @@ namespace DataImporter.Areas.User.Controllers
         public IActionResult ViewContacts()
         {
             var model = _scope.Resolve<ExportFileModel>();
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
             ViewBag.GroupList = new SelectList(list, "Id", "Name");
 
             return View(model);
@@ -258,7 +258,7 @@ namespace DataImporter.Areas.User.Controllers
             var model = _scope.Resolve<ExportFileModel>();
             model.GetContactsList(exportFileModel.GroupId, exportFileModel.DateFrom,exportFileModel.DateTo);
 
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
             if (model.Headers.Count == 0)
             {
                 _notyfService.Error("No Contact Available", 10);
@@ -280,7 +280,7 @@ namespace DataImporter.Areas.User.Controllers
 
 
             var model = _scope.Resolve<ExportFileModel>();
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
             ViewBag.GroupList = new SelectList(list, "Id", "Name");
         
             return View(model);
@@ -293,7 +293,7 @@ namespace DataImporter.Areas.User.Controllers
             var model = _scope.Resolve<ExportFileModel>();
             model.GetContactsList(filePathmodel.GroupId);
             
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
             if (model.Headers.Count == 0)
             {
                 _notyfService.Error("No Contact Available", 4);
@@ -382,7 +382,7 @@ namespace DataImporter.Areas.User.Controllers
         {
 
             var model = _scope.Resolve<ExportFileModel>();
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
             ViewBag.GroupList = new SelectList(list, "Id", "Name");
 
             return View(model);
@@ -395,7 +395,7 @@ namespace DataImporter.Areas.User.Controllers
             var model = _scope.Resolve<ExportFileModel>();
             //model.GetContactsList(filePathmodel.GroupId);
 
-            var list = model.LoadAllGroups();
+            var list = model.LoadGroupsWithContactAvailable();
 
             ViewBag.GroupList = new SelectList(list, "Id", "Name");
 
@@ -407,12 +407,21 @@ namespace DataImporter.Areas.User.Controllers
         {
 
             var model = _scope.Resolve<ExportFileModel>();
-            var contacts = model.GetExportMultipleFiles(filePathmodel.GroupIds);
+            if (filePathmodel.GroupIds != null)
+            {
+                var contacts = model.GetExportMultipleFiles(filePathmodel.GroupIds);
+                string fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                string fileFormat = "User.xlsx";
+                contacts.Position = 0;
+                return File(contacts, fileType, fileFormat);
+            }
+            else
+            {
+                return RedirectToAction(nameof(ExportFileMultiple));
+            }
             
-            string fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-            string fileFormat = "User.xlsx";
-            contacts.Position = 0;
-            return File(contacts, fileType, fileFormat);
+            
+            
 
         }
 
