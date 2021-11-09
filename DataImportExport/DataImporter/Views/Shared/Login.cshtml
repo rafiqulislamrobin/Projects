@@ -13,7 +13,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LfA81ocAAAAAInGiexBq-KLtZGpw6mzugcu-bWi"></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LfA81ocAAAAAInGiexBq-KLtZGpw6mzugcu-bWi', { action: 'Login' }).then(function (token) {
+            grecaptcha.execute('', { action: 'Login' }).then(function (token) {
                 document.getElementById("foo").value = token;
             });
         });
